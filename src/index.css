@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  top: 5px;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+  z: 3;
+  border-radius: 20px;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background: white;
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background: white;
+}
+
+.manropebh1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 56px;
+
+  font-style: normal;
+}
+.manropebh2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+
+  font-style: normal;
+}
+.manropebh3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+
+  font-style: normal;
+}
+.manropebh4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+
+  font-style: normal;
+}
+.manropebh5 {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+
+  font-style: normal;
+}
+.manropebh6 {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+
+  font-style: normal;
+}
+
+.manropereg {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+
+  font-style: normal;
+}
+.manropesub {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+
+  font-style: normal;
+}
+.manropemed {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+
+  font-style: normal;
+}
+
+.mobilehero {
+  background-image: url("images/home/mobile/image-header.jpg");
 }
