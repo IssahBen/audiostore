@@ -105,3 +105,18 @@
 .mobilehero {
   background-image: url("images/home/mobile/image-header.jpg");
 }
+
+.circles {
+  background-image: url("images/home/mobile/pattern-circles.svg");
+}
+
+.zx7 {
+  background-image: url("images/home/mobile/image-speaker-zx7.jpg");
+}
+
+.yx1 {
+  background-image: url("images/home/mobile/image-earphones-yx1.jpg");
+}
+.hero {
+  background-image: url("images/home/mobile/image-best-gear.jpg");
+}
