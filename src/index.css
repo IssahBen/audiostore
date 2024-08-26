@@ -105,6 +105,9 @@
 .mobilehero {
   background-image: url("images/home/mobile/image-header.jpg");
 }
+.tablethero {
+  background-image: url("images/home/tablet/image-header.jpg");
+}
 
 .circles {
   background-image: url("images/home/mobile/pattern-circles.svg");

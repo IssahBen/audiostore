@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function MobileNav() {
+export default function TabletNav() {
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
   function HandleClick() {
@@ -18,15 +18,15 @@ export default function MobileNav() {
     }
   }
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black lg:hidden">
       <div className="flex w-full bg-black py-4  px-4 items-center justify-between ">
         <div className="flex items-center">
-          <div className="md:hidden poppins-regular ">
+          <div className=" poppins-regular ">
             <button
               id="menu-btn"
               type="button"
               ref={hamburger}
-              className="  z-40 block hamburger md:hidden focus:outline-none"
+              className="  z-40 block hamburger  focus:outline-none"
               onClick={HandleClick}
             >
               <span className="hamburger-top"></span>
@@ -52,7 +52,7 @@ export default function MobileNav() {
               </a>
             </div>
           </div>
-          <h1 className="ml-5 text-white manropemed font-bold">audiophile</h1>
+          <h1 className="ml-5 text-white manropebh3 font-bold">audiophile</h1>
         </div>
         <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -63,7 +63,7 @@ export default function MobileNav() {
         </svg>
       </div>
       <div className="w-full ">
-        <div className="border-t-[0.5px] border-t-ash "></div>
+        <div className="border-t-[0.5px] border-t-ash px-10 "></div>
       </div>
     </div>
   );
