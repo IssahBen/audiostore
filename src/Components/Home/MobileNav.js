@@ -36,7 +36,7 @@ export default function MobileNav() {
             <div
               id="menu"
               ref={mobileMenu}
-              className="absolute    z-20 tracking-tighter top-0 right-0 hidden flex-col  manropereg  w-1/2 h-72 py-1 pt-10 pl-14 space-y-2   uppercase bg-lightblack text-tintwhite"
+              className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-0 right-0 hidden flex-col  manropereg  w-1/2  py-1 pt-5 pb-5  pl-14 space-y-2   uppercase bg-lightblack text-tintwhite"
             >
               <a href="#home" className="hover:text-hoverbrown">
                 HOME
