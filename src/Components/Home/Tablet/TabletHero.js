@@ -1,6 +1,6 @@
 export default function TabletHero() {
   return (
-    <div className="  flex justify-center items-center  lg:hidden tablethero w-full h-[750px] bg-cover ">
+    <div className="flex justify-center items-center mediumhide   tablethero w-full h-[750px] bg-cover ">
       <div className="flex flex-col space-y-8  items-center w-2/3 h-80 ">
         <p className="font-normal text-ashwhite tracking-[10px] manropereg ">
           New Product

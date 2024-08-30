@@ -18,7 +18,7 @@ export default function MobileNav() {
     }
   }
   return (
-    <div className="w-full bg-black md:hidden">
+    <div className="w-full bg-black smallhide">
       <div className="flex w-full bg-black py-4  px-4 items-center justify-between ">
         <div className="flex items-center">
           <div className=" poppins-regular ">

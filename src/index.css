@@ -116,10 +116,31 @@
 .zx7 {
   background-image: url("images/home/mobile/image-speaker-zx7.jpg");
 }
+.tabletzx7 {
+  background-image: url("images/home/tablet/image-speaker-zx7.jpg");
+}
 
 .yx1 {
   background-image: url("images/home/mobile/image-earphones-yx1.jpg");
 }
+.tabletyx1 {
+  background-image: url("images/home/tablet/image-earphones-yx1.jpg");
+}
 .hero {
   background-image: url("images/home/mobile/image-best-gear.jpg");
+}
+.summaryhero {
+  background-image: url("images/home/tablet/image-best-gear.jpg");
+}
+
+.smallhide {
+  @media screen and (max-width: 1020px) and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mediumhide {
+  @media screen and (max-width: 760px) and (min-width: 320px) {
+    display: none;
+  }
 }
