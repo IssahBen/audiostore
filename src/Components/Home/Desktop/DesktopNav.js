@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function MobileNav() {
+export default function DesktopNav() {
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
   function HandleClick() {
@@ -18,41 +18,22 @@ export default function MobileNav() {
     }
   }
   return (
-    <div className="w-full bg-black smallhide largehide">
-      <div className="flex w-full bg-black py-4  px-4 items-center justify-between ">
-        <div className="flex items-center">
-          <div className=" poppins-regular ">
-            <button
-              id="menu-btn"
-              type="button"
-              ref={hamburger}
-              className="  z-40 block hamburger md:hidden focus:outline-none"
-              onClick={HandleClick}
-            >
-              <span className="hamburger-top"></span>
-              <span className="hamburger-middle"></span>
-              <span className="hamburger-bottom"></span>
-            </button>
-            <div
-              id="menu"
-              ref={mobileMenu}
-              className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-0 right-0 hidden flex-col  manropereg  w-1/2  py-1 pt-5 pb-5  pl-14 space-y-2   uppercase bg-lightblack text-tintwhite"
-            >
-              <a href="#home" className="hover:text-hoverbrown">
-                HOME
-              </a>
-              <a href="#headphones" className="hover:text-hoverbrown">
-                HEADPHONES
-              </a>
-              <a href="#speakers" className="hover:text-hoverbrown">
-                SPEAKERS
-              </a>
-              <a href="#earphones" className="hover:text-hoverbrown">
-                EARPHONES
-              </a>
-            </div>
-          </div>
-          <h1 className="ml-5 text-white manropemed font-bold">audiophile</h1>
+    <div className="w-full bg-black desktophide ">
+      <div className="flex w-full bg-black py-4  px-12 items-center justify-between ">
+        <h1 className="ml-5 text-white manropebh3 font-bold">audiophile</h1>
+        <div className="  flex  manropereg    py-1 pt-5 pb-5  pl-14 space-x-10   uppercase  text-tintwhite">
+          <a href="#home" className="hover:text-hoverbrown">
+            HOME
+          </a>
+          <a href="#headphones" className="hover:text-hoverbrown">
+            HEADPHONES
+          </a>
+          <a href="#speakers" className="hover:text-hoverbrown">
+            SPEAKERS
+          </a>
+          <a href="#earphones" className="hover:text-hoverbrown">
+            EARPHONES
+          </a>
         </div>
         <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -63,7 +44,7 @@ export default function MobileNav() {
         </svg>
       </div>
       <div className="w-full ">
-        <div className="border-t-[0.5px] border-t-ash "></div>
+        <div className="border-t-[0.5px] border-t-ash px-10 "></div>
       </div>
     </div>
   );

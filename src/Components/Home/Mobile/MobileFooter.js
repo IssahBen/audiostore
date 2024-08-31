@@ -1,6 +1,6 @@
 export default function Mobilefooter() {
   return (
-    <div className="flex flex-col w-full h-full bg-black items-center space-y-10 smallhide">
+    <div className="flex flex-col w-full h-full bg-black items-center space-y-10 smallhide largehide">
       <div className="w-32 border-b-8 border-brown"></div>
       <p className="manropebh3 tracking-tight font-extrabold text-white">
         audiophile

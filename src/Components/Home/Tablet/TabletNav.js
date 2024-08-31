@@ -18,7 +18,7 @@ export default function TabletNav() {
     }
   }
   return (
-    <div className="w-full bg-black  mediumhide ">
+    <div className="w-full bg-black  mediumhide largehide">
       <div className="flex w-full bg-black py-4  px-4 items-center justify-between ">
         <div className="flex items-center">
           <div className=" poppins-regular ">

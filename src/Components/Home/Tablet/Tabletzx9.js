@@ -1,7 +1,7 @@
 import zx9 from "../../../images/home/tablet/image-speaker-zx9.png";
 export default function Tabletzx9() {
   return (
-    <div className="w-full h-[720px] mediumhide flex flex-col space-y-4 circles items-center bg-cover bg-no-repeat bg-brown py-8 mt-24">
+    <div className="w-full h-[720px] mediumhide  largehide flex flex-col space-y-4 circles items-center bg-cover bg-no-repeat bg-brown py-8 mt-24">
       <img src={zx9} alt="" className="w-[190px] h-[230px]" />
       <div className="flex flex-col space-y-0 font-extrabold text-white tracking-widest">
         <p className="manropebh1 text-center">ZX9</p>

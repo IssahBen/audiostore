@@ -1,12 +1,11 @@
-export default function Mobilesummary() {
+export default function Desktopsummary() {
   return (
-    <div className="w-full flex flex-col mt-24 bg-tintwhite mb-24 smallhide largehide">
-      <div className="w-full h-[300px] hero bg-cover"></div>
-      <div className="flex flex-col items-center space-y-10 mt-10">
-        <p className="text-center manropebh3 font-extrabold">
+    <div className="w-full flex  justify-between mt-24 bg-tintwhite mb-24 h-[588px] desktophide">
+      <div className="flex flex-col items-start space-y-10 mt-10 w-[445px]">
+        <p className=" manropebh2 font-extrabold  ">
           BRINGING YOU THE <span className="text-brown">BEST</span> AUDIO GEAR
         </p>
-        <p className="manropemed font-semibold text-center tracking-wider">
+        <p className="manropemed font-bold  tracking-wider leading-7">
           Located at the heart of New York City,Audiophile is the premier
           storefor high end headphones,earphones,speakers, and audio
           accessories.We have a large showroom and luxury demonstration rooms
@@ -15,6 +14,7 @@ export default function Mobilesummary() {
           make Audiophile the best place to buy your portable audio equipment
         </p>
       </div>
+      <div className="w-[540px] h-[588px] summarydhero bg-cover"></div>
     </div>
   );
 }

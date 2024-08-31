@@ -108,6 +108,9 @@
 .tablethero {
   background-image: url("images/home/tablet/image-header.jpg");
 }
+.desktophero {
+  background-image: url("images/home/desktop/image-hero.jpg");
+}
 
 .circles {
   background-image: url("images/home/mobile/pattern-circles.svg");
@@ -119,6 +122,9 @@
 .tabletzx7 {
   background-image: url("images/home/tablet/image-speaker-zx7.jpg");
 }
+.desktopzx7 {
+  background-image: url("images/home/desktop/image-speaker-zx7.jpg");
+}
 
 .yx1 {
   background-image: url("images/home/mobile/image-earphones-yx1.jpg");
@@ -126,11 +132,17 @@
 .tabletyx1 {
   background-image: url("images/home/tablet/image-earphones-yx1.jpg");
 }
+.desktopyx1 {
+  background-image: url("images/home/desktop/image-earphones-yx1.jpg");
+}
 .hero {
   background-image: url("images/home/mobile/image-best-gear.jpg");
 }
 .summaryhero {
   background-image: url("images/home/tablet/image-best-gear.jpg");
+}
+.summarydhero {
+  background-image: url("images/home/desktop/image-best-gear.jpg");
 }
 
 .smallhide {
@@ -141,6 +153,17 @@
 
 .mediumhide {
   @media screen and (max-width: 760px) and (min-width: 320px) {
+    display: none;
+  }
+}
+
+.largehide {
+  @media screen and (min-width: 1021px) {
+    display: none;
+  }
+}
+.desktophide {
+  @media screen and (max-width: 1021px) {
     display: none;
   }
 }

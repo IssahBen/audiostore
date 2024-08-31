@@ -14,29 +14,45 @@ import Tabletyx1 from "./Tablet/Tabletyx1";
 import Mobilesummary from "./Mobile/Mobilesummary";
 import Tabletsummary from "./Tablet/Tabletsummary";
 import Tabletfooter from "./Tablet/TabletFooter";
+import DesktopNav from "./Desktop/DesktopNav";
+import DesktopHero from "./Desktop/DesktopHero";
+import DesktopCategory from "./Desktop/DesktopCategory";
+import Desktopzx9 from "./Desktop/Desktopzx9";
+import Desktopzx7 from "./Desktop/Desktopzx7";
+import Desktopyx1 from "./Desktop/Desktopyx1";
+import Desktopsummary from "./Desktop/Desktopsummary";
+import Desktopfooter from "./Desktop/DesktopFooter";
 export default function Home() {
   return (
     <div className="relative w-screen h-screen overflow-y-auto flex flex-col">
       <main className="w-full h-full">
         <MobileNav />
         <TabletNav />
+        <DesktopNav />
         <MobileHero />
         <TabletHero />
-        <div className=" w-full flex flex-col px-5 bg-white ">
+        <DesktopHero />
+        <div className=" w-full flex flex-col px-12 bg-white ">
           <MobileCategory />
           <TabletCategory />
+          <DesktopCategory />
           <Mobilezx9 />
           <Tabletzx9 />
+          <Desktopzx9 />
 
           <Mobilezx7 />
           <Tabletzx7 />
+          <Desktopzx7 />
           <Tabletyx1 />
           <Mobileyx1 />
+          <Desktopyx1 />
           <Mobilesummary />
           <Tabletsummary />
+          <Desktopsummary />
         </div>
         <MobileFooter />
         <Tabletfooter />
+        <Desktopfooter />
       </main>
     </div>
   );

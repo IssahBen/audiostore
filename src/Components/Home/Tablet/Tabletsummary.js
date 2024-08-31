@@ -1,6 +1,6 @@
 export default function Tabletsummary() {
   return (
-    <div className="w-full flex flex-col mt-24 bg-tintwhite mb-24 h-[633px] mediumhide">
+    <div className="w-full flex flex-col mt-24 bg-tintwhite mb-24 h-[633px] mediumhide largehide">
       <div className="w-full h-[300px] summaryhero bg-cover"></div>
       <div className="flex flex-col items-center space-y-10 mt-10">
         <p className="text-center manropebh2 font-extrabold  w-[573px]">

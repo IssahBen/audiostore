@@ -3,7 +3,7 @@ import earphonepic from "../../../images/home/mobile/earphone.png";
 import speakerpic from "../../../images/home/mobile/speaker.png";
 export default function MobileCategory() {
   return (
-    <div className=" w-full h-full flex flex-col space-y-16 mt-20 smallhide">
+    <div className=" w-full h-full flex flex-col space-y-16 mt-20 smallhide largehide">
       <Headphones />
       <Speakers />
       <Earphones />
