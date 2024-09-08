@@ -1,4 +1,7 @@
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
 import DesktopNav from "../Home/Desktop/DesktopNav";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
 import MobileCategory from "../Home/Mobile/MobileCategory";
 import Mobilefooter from "../Home/Mobile/MobileFooter";
 import MobileNav from "../Home/Mobile/MobileNav";
@@ -7,6 +10,9 @@ import TabletCategory from "../Home/Tablet/TabletCategory";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
 import TabletNav from "../Home/Tablet/TabletNav";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
+import Desktop59 from "./Desktop/Desktop59";
+import DesktopMark1 from "./Desktop/DesktopMark1";
+import DesktopMark2 from "./Desktop/DesktopMark2";
 import Mobile59 from "./Mobile/Mobile59";
 import MobileMark1 from "./Mobile/MobileMark1";
 import MobileMark2 from "./Mobile/MobileMark2";
@@ -27,17 +33,31 @@ export default function Headphones() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileMark2 />
           <TabletMark2 />
+          <DesktopMark2 />
           <MobileMark1 />
           <TabletMark1 />
+          <DesktopMark1 />
           <Mobile59 />
           <Tablet59 />
+          <Desktop59 />
           <MobileCategory />
           <TabletCategory />
+          <div className="w-full desktophide pb-10">
+            <DesktopCategory />
+          </div>
           <Mobilesummary />
           <Tabletsummary />
+          <Desktopsummary />
         </div>
-        <Mobilefooter />
-        <Tabletfooter />
+        <div className="w-full h-[654px] mt-10 smallhide largehide">
+          <Mobilefooter />
+        </div>
+        <div className="w-full h-[400px]  mt-10 mediumhide largehide">
+          <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
+        </div>
       </main>
     </div>
   );
