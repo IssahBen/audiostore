@@ -1,6 +1,8 @@
 import { useRef } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function TabletNav() {
+  const navigate = useNavigate();
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
   function HandleClick() {
@@ -38,18 +40,18 @@ export default function TabletNav() {
               ref={mobileMenu}
               className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-0 right-0 hidden flex-col  manropereg  w-1/2  py-1 pt-5 pb-5  pl-14 space-y-2   uppercase bg-lightblack text-tintwhite"
             >
-              <a href="#home" className="hover:text-hoverbrown">
+              <NavLink to="/" className="hover:text-hoverbrown">
                 HOME
-              </a>
-              <a href="#headphones" className="hover:text-hoverbrown">
+              </NavLink>
+              <NavLink to="headphones" className="hover:text-hoverbrown">
                 HEADPHONES
-              </a>
-              <a href="#speakers" className="hover:text-hoverbrown">
+              </NavLink>
+              <NavLink to="speakers" className="hover:text-hoverbrown">
                 SPEAKERS
-              </a>
-              <a href="#earphones" className="hover:text-hoverbrown">
+              </NavLink>
+              <NavLink to="earphones" className="hover:text-hoverbrown">
                 EARPHONES
-              </a>
+              </NavLink>
             </div>
           </div>
           <h1 className="ml-5 text-white manropebh3 font-bold">audiophile</h1>
