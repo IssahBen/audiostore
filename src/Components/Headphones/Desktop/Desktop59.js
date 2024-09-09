@@ -1,7 +1,7 @@
 export default function Desktop59() {
   return (
     <div className="w-full flex  items-center space-x-28 h-[560px] desktophide ">
-      <div className="w-full h-[560px] desktop59 bg-cover"></div>
+      <div className="w-full h-[560px] desktopc59 bg-cover"></div>
       <div className="flex flex-col w-full items-start space-y-4">
         <div className="flex flex-col w-full items-start justify-center ">
           <p className="tracking-wide manropebh2 text-center font-bold">XX59</p>

@@ -1,3 +1,4 @@
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
 import Desktopfooter from "../Home/Desktop/DesktopFooter";
 import DesktopNav from "../Home/Desktop/DesktopNav";
 import Desktopsummary from "../Home/Desktop/Desktopsummary";
@@ -36,6 +37,9 @@ export default function Speakers() {
           <Desktopzx7 />
           <MobileCategory />
           <TabletCategory />
+          <div className="w-full desktophide pb-10">
+            <DesktopCategory />
+          </div>
           <div className="w-full">
             <Mobilesummary />
             <Tabletsummary />

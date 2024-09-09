@@ -43,13 +43,13 @@ export default function TabletNav() {
               <NavLink to="/" className="hover:text-hoverbrown">
                 HOME
               </NavLink>
-              <NavLink to="headphones" className="hover:text-hoverbrown">
+              <NavLink to="/headphones" className="hover:text-hoverbrown">
                 HEADPHONES
               </NavLink>
-              <NavLink to="speakers" className="hover:text-hoverbrown">
+              <NavLink to="/speakers" className="hover:text-hoverbrown">
                 SPEAKERS
               </NavLink>
-              <NavLink to="earphones" className="hover:text-hoverbrown">
+              <NavLink to="/earphones" className="hover:text-hoverbrown">
                 EARPHONES
               </NavLink>
             </div>

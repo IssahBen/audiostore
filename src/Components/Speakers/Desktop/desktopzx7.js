@@ -1,7 +1,7 @@
 export default function Desktopzx7() {
   return (
     <div className="w-full flex flex-row-reverse items-center   desktophide h-[560px]  ">
-      <div className="w-full h-[560px] desktopzx7 bg-cover"></div>
+      <div className="w-full h-[560px] desktopczx7 bg-cover"></div>
       <div className="flex flex-col w-full items-start space-y-4">
         <div className="flex flex-col w-full items-start justify-center ">
           <p className="tracking-wide manropebh2 text-center font-bold">ZX7</p>

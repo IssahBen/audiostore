@@ -1,7 +1,7 @@
 export default function Mobile59() {
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] smallhide largehide ">
-      <div className="w-full h-[352px] mobile59 bg-cover"></div>
+      <div className="w-full h-[352px] mobilec59 bg-cover"></div>
       <div className="flex flex-col w-full items-center space-y-4">
         <div className="flex flex-col w-full items-center justify-center ">
           <p className="tracking-wide manropebh4 text-center font-bold">XX59</p>

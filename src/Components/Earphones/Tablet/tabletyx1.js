@@ -1,21 +1,23 @@
-export default function Tabletzx9() {
+export default function Tabletyx1() {
   return (
     <div className="w-full flex flex-col space-y-8 h-[706px]  mediumhide largehide ">
-      <div className="w-full h-[352px] tabletczx9 bg-cover"></div>
+      <div className="w-full h-[352px] tabletcyx1 bg-cover"></div>
       <div className="flex flex-col w-full items-center space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <div className="flex flex-col w-full items-center justify-center ">
-          <p className="tracking-wide manropebh4 text-center font-bold">ZX9</p>
           <p className="tracking-wide manropebh4 text-center font-bold">
-            SPEAKER
+            YX1 WIRELESS
+          </p>
+          <p className="tracking-wide manropebh4 text-center font-bold">
+            EARPHONES
           </p>
         </div>
         <div className="w-full px-16">
           <p className="text-center  text-ash manropemed leading-6">
-            Upgrade your sound system with all new ZX9 active speaker.It's
-            bookshelf speaker system that offers truly wireless
-            connectivity-creating new possibilites for more pleasing and
-            practical audio setups.
+            Tailor your listening experience with bespoke dynamic drivers from
+            the new YX1 Wireless Earphones.Enjoy incredible high-fidelity sound
+            even in noisy environments with its active noise cancellation
+            feature.
           </p>
         </div>
         <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">

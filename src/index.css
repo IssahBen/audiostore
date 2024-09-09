@@ -168,48 +168,57 @@
   }
 }
 
-.mobilemark2 {
+.mobilecmark2 {
   background-image: url("images/productx99Mark2/Mobile/image-category-page-preview.jpg");
 }
-.mobilemark1 {
+.mobilecmark1 {
   background-image: url("images/productx99Mark1/Mobile/image-category-page-preview.jpg");
 }
-.mobile59 {
+.mobilec59 {
   background-image: url("images/productxx59/Mobile/image-category-page-preview.jpg");
 }
-.tabletmark2 {
+.tabletcmark2 {
   background-image: url("images/productx99Mark2/Tablet/image-category-page-preview.jpg");
 }
-.tabletmark1 {
+.tabletcmark1 {
   background-image: url("images/productx99Mark1/Tablet/image-category-page-preview.jpg");
 }
-.tablet59 {
+.tabletc59 {
   background-image: url("images/productxx59/Tablet/image-category-page-preview.jpg");
 }
-.desktopmark2 {
+.desktopcmark2 {
   background-image: url("images/productx99Mark2/Desktop/image-category-page-preview.jpg");
 }
-.desktopmark1 {
+.desktopcmark1 {
   background-image: url("images/productx99Mark1/Desktop/image-category-page-preview.jpg");
 }
-.desktop59 {
+.desktopc59 {
   background-image: url("images/productxx59/Desktop/image-category-page-preview.jpg");
 }
-.mobilezx9 {
+.mobileczx9 {
   background-image: url("images/productzx9/mobile/image-category-page-preview.jpg");
 }
-.mobilezx7 {
+.mobileczx7 {
   background-image: url("images/productzx7/mobile/image-category-page-preview.jpg");
 }
-.tabletzx9 {
+.tabletczx9 {
   background-image: url("images/productzx9/tablet/image-category-page-preview.jpg");
 }
-.tabletzx7 {
+.tabletczx7 {
   background-image: url("images/productzx7/tablet/image-category-page-preview.jpg");
 }
-.desktopzx9 {
+.desktopczx9 {
   background-image: url("images/productzx9/Desktop/image-category-page-preview.jpg");
 }
-.desktopzx7 {
+.desktopczx7 {
   background-image: url("images/productzx7/Desktop/image-category-page-preview.jpg");
+}
+.mobilecyx1 {
+  background-image: url("images/productyx1/Mobile/image-category-page-preview.jpg");
+}
+.tabletcyx1 {
+  background-image: url("images/productyx1/Tablet/image-category-page-preview.jpg");
+}
+.desktopcyx1 {
+  background-image: url("images/productyx1/Desktop/image-category-page-preview.jpg");
 }

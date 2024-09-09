@@ -1,7 +1,7 @@
 export default function Desktopzx9() {
   return (
     <div className="w-full flex items-center space-x-28 h-[560px] desktophide   ">
-      <div className="w-full h-[506px] desktopzx9 bg-cover"></div>
+      <div className="w-full h-[506px] desktopczx9 bg-cover"></div>
       <div className="flex flex-col w-full items-start space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <div className="flex flex-col w-full items-start justify-center ">

@@ -1,22 +1,23 @@
-export default function DesktopMark2() {
+export default function Desktopyx1() {
   return (
     <div className="w-full flex items-center space-x-28 h-[560px] desktophide   ">
-      <div className="w-full h-[506px] desktopcmark2 bg-cover"></div>
+      <div className="w-full h-[506px] desktopcyx1 bg-cover"></div>
       <div className="flex flex-col w-full items-start space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <div className="flex flex-col w-full items-start justify-center ">
           <p className="tracking-wide manropebh2 text-center font-bold">
-            XX99 MARK II
+            YX1 WIRELESS
           </p>
           <p className="tracking-wide manropebh2 text-center font-bold">
-            HEADPHONES
+            EARPHONES
           </p>
         </div>
         <div className="w-full pr-5 ">
           <p className="  text-ash manropemed leading-6">
-            The new XX99 Mark II headphones is the pinnacle of pristine audio.It
-            redefines your premium headphone experience by reproducing the
-            balanced depth and precision of studio-quality sound
+            Tailor your listening experience with bespoke dynamic drivers from
+            the new YX1 Wireless Earphones.Enjoy incredible high-fidelity sound
+            even in noisy environments with its active noise cancellation
+            feature.
           </p>
         </div>
         <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">

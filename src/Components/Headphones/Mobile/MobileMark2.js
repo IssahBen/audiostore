@@ -1,7 +1,7 @@
 export default function MobileMark2() {
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-14 smallhide largehide">
-      <div className="w-full h-[352px] mobilemark2 bg-cover"></div>
+      <div className="w-full h-[352px] mobilecmark2 bg-cover"></div>
       <div className="flex flex-col w-full items-center space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <p className="tracking-wide manropebh4 text-center font-bold">

@@ -1,7 +1,7 @@
 export default function TabletMark2() {
   return (
     <div className="w-full flex flex-col space-y-8 h-[706px]  mediumhide largehide ">
-      <div className="w-full h-[352px] tabletmark2 bg-cover"></div>
+      <div className="w-full h-[352px] tabletcmark2 bg-cover"></div>
       <div className="flex flex-col w-full items-center space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <div className="flex flex-col w-full items-center justify-center ">
