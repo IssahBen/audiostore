@@ -238,9 +238,24 @@
 .mobilemark1option {
   background-image: url("images/shared/mobile/image-xx99-mark-one-headphones.jpg");
 }
+.mobilemark2option {
+  background-image: url("images/shared/mobile/image-xx99-mark-two-headphones.jpg");
+}
 .mobilexx59option {
   background-image: url("images/shared/mobile/image-xx59-headphones.jpg");
 }
 .mobilezx9option {
   background-image: url("images/shared/mobile/image-zx9-speaker.jpg");
+}
+.mobilevmark1 {
+  background-image: url("images/productx99Mark1/Mobile/image-product.jpg");
+}
+.mobilevmark1i1 {
+  background-image: url("images/productx99Mark1/Mobile/image-gallery-1.jpg");
+}
+.mobilevmark1i2 {
+  background-image: url("images/productx99Mark1/Mobile/image-gallery-2.jpg");
+}
+.mobilevmark1i3 {
+  background-image: url("images/productx99Mark1/Mobile/image-gallery-3.jpg");
 }

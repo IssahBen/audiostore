@@ -20,7 +20,7 @@ export default function VMARK2() {
           <MobileVMark2 />
           <Mark2features />
           <MobileOptionsMark2 />
-          <div className="w-ful">
+          <div className="">
             <MobileCategory />
           </div>
           <Mobilesummary />

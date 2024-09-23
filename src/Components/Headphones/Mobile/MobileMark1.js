@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
 export default function MobileMark1() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/headphones/mark1");
+  }
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] smallhide largehide">
       <div className="w-full h-[352px] mobilecmark1 bg-cover"></div>
@@ -11,7 +16,10 @@ export default function MobileMark1() {
           detailed and accurate audio reproduction for audiophiles,mixing
           engineers,and music aficionados alike in studios and on the go.
         </p>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={HandleClick}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

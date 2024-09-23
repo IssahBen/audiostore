@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function MobileMark2() {
   const navigate = useNavigate();
   function HandleClick() {

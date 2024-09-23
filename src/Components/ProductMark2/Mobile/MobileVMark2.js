@@ -15,6 +15,7 @@ export default function MobileVMark2() {
           redefines your premium headphone experience by reproducing the
           balanced depth and precision of studio-quality sound.
         </p>
+        <p className=" manropebh5 font-bold">$2,999</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
             value={numberofmark2}
