@@ -1,6 +1,8 @@
 import Earphones from "./Components/Earphones/earphones";
 import Headphones from "./Components/Headphones/headphones";
 import Home from "./Components/Home/Home";
+import VMARK2 from "./Components/ProductMark2/VMark2";
+
 import Speakers from "./Components/Speakers/speakers";
 import Speaker from "./Components/Speakers/speakers";
 import { DataProvider } from "./Context/DataContext";
@@ -12,6 +14,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="headphones" element={<Headphones />} />
+          <Route path="headphones/mark2" element={<VMARK2 />} />
+
           <Route path="speakers" element={<Speakers />} />
           <Route path="earphones" element={<Earphones />} />
         </Routes>

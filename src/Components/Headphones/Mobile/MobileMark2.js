@@ -1,4 +1,9 @@
+import { NavLink, useNavigate } from "react-router-dom";
 export default function MobileMark2() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/headphones/mark2");
+  }
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-14 smallhide largehide">
       <div className="w-full h-[352px] mobilecmark2 bg-cover"></div>
@@ -12,7 +17,10 @@ export default function MobileMark2() {
           redefines your premium headphone experience by reproducing the
           balanced depth and precision of studio-quality sound
         </p>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={HandleClick}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>
