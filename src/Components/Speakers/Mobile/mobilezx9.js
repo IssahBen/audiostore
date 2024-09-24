@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
 export default function Mobilezx9() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/speakers/zx9");
+  }
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-14 smallhide largehide">
       <div className="w-full h-[352px] mobileczx9 bg-cover"></div>
@@ -16,7 +21,10 @@ export default function Mobilezx9() {
           connectivity-creating new possibilites for more pleasing and practical
           audio setups.
         </p>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={HandleClick}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

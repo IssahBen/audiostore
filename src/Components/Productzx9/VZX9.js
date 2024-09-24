@@ -4,11 +4,11 @@ import Mobilefooter from "../Home/Mobile/MobileFooter";
 import MobileNav from "../Home/Mobile/MobileNav";
 import Mobilesummary from "../Home/Mobile/Mobilesummary";
 import TabletNav from "../Home/Tablet/TabletNav";
-import MobileOptionsZX7 from "./Mobile/MobileOptionsZX7";
-import MobileVZX7 from "./Mobile/MobileVZX7";
-import ZX7features from "./Mobile/ZX7features";
+import MobileOptionsZX9 from "./Mobile/MobileOptionsZX9";
+import MobileVZX9 from "./Mobile/MobileVZX9";
+import ZX9features from "./Mobile/ZX9features";
 
-export default function VZX7() {
+export default function VZX9() {
   return (
     <div className="relative w-screen h-screen overflow-y-auto flex flex-col">
       <main className="w-full h-full">
@@ -17,9 +17,9 @@ export default function VZX7() {
         <TabletNav />
 
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
-          <MobileVZX7 />
-          <ZX7features />
-          <MobileOptionsZX7 />
+          <MobileVZX9 />
+          <ZX9features />
+          <MobileOptionsZX9 />
           <div className="">
             <MobileCategory />
           </div>

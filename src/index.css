@@ -247,6 +247,9 @@
 .mobilezx9option {
   background-image: url("images/shared/mobile/image-zx9-speaker.jpg");
 }
+.mobilezx7option {
+  background-image: url("images/shared/mobile/image-zx7-speaker.jpg");
+}
 .mobilevmark1 {
   background-image: url("images/productx99Mark1/Mobile/image-product.jpg");
 }
@@ -258,4 +261,53 @@
 }
 .mobilevmark1i3 {
   background-image: url("images/productx99Mark1/Mobile/image-gallery-3.jpg");
+}
+
+.mobilevxx59 {
+  background-image: url("images/productxx59/Mobile/image-product.jpg");
+}
+.mobilevxx59i1 {
+  background-image: url("images/productxx59/Mobile/image-gallery-1.jpg");
+}
+.mobilevxx59i2 {
+  background-image: url("images/productxx59/Mobile/image-gallery-2.jpg");
+}
+.mobilevxx59i3 {
+  background-image: url("images/productxx59/Mobile/image-gallery-3.jpg");
+}
+.mobilevzx9 {
+  background-image: url("images/productzx9/mobile/image-product.jpg");
+}
+.mobilevzx9i1 {
+  background-image: url("images/productzx9/mobile/image-gallery-1.jpg");
+}
+.mobilevzx9i2 {
+  background-image: url("images/productzx9/mobile/image-gallery-2.jpg");
+}
+.mobilevzx9i3 {
+  background-image: url("images/productzx9/mobile/image-gallery-3.jpg");
+}
+.mobilevzx7 {
+  background-image: url("images/productzx7/mobile/image-product.jpg");
+}
+.mobilevzx7i1 {
+  background-image: url("images/productzx7/mobile/image-gallery-1.jpg");
+}
+.mobilevzx7i2 {
+  background-image: url("images/productzx7/mobile/image-gallery-2.jpg");
+}
+.mobilevzx7i3 {
+  background-image: url("images/productzx7/mobile/image-gallery-3.jpg");
+}
+.mobilevyx1 {
+  background-image: url("images/productyx1/Mobile/image-product.jpg");
+}
+.mobilevyx1i1 {
+  background-image: url("images/productyx1/Mobile/image-gallery-1.jpg");
+}
+.mobilevyx1i2 {
+  background-image: url("images/productyx1/Mobile/image-gallery-2.jpg");
+}
+.mobilevyx1i3 {
+  background-image: url("images/productyx1/Mobile/image-gallery-3.jpg");
 }
