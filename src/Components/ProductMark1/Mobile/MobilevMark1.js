@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function MobileVMark1() {
   const [numberofmark2, setNumberofMark2] = useState(1);
   return (
-    <div className="w-full flex flex-col space-y-8 h-[724px] mt-14 smallhide largehide">
+    <div className="w-full flex flex-col space-y-8 h-[724px] mt-5 smallhide largehide">
       <div className="w-full h-[352px] mobilevmark1 bg-cover"></div>
       <div className="flex flex-col w-full items-start space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>

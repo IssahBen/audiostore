@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 export default function Mobilefooter() {
   return (
     <div className="flex flex-col w-full h-full bg-black items-center space-y-10 smallhide largehide">
@@ -6,18 +7,18 @@ export default function Mobilefooter() {
         audiophile
       </p>
       <div className="flex flex-col items-center text-white space-y-4 font-bold">
-        <a href="#home" className="hover:text-hoverbrown">
+        <NavLink to="/" className="hover:text-hoverbrown">
           HOME
-        </a>
-        <a href="#headphones" className="hover:text-hoverbrown">
+        </NavLink>
+        <NavLink to="/headphones" className="hover:text-hoverbrown">
           HEADPHONES
-        </a>
-        <a href="#speakers" className="hover:text-hoverbrown">
+        </NavLink>
+        <NavLink to="/speakers" className="hover:text-hoverbrown">
           SPEAKERS
-        </a>
-        <a href="#earphones" className="hover:text-hoverbrown">
+        </NavLink>
+        <NavLink to="/earphones" className="hover:text-hoverbrown">
           EARPHONES
-        </a>
+        </NavLink>
       </div>
       <div className="flex flex-col space-y-8 px-2">
         <p className="text-gray-300 leading-6 manropereg tracking-widest font-medium text-center">
