@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function TabletMark1() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col space-y-8 h-[706px] mediumhide largehide ">
       <div className="w-full h-[352px] tabletcmark1 bg-cover"></div>
@@ -19,7 +22,12 @@ export default function TabletMark1() {
           </p>
         </div>
 
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={() => {
+            navigate("/headphones/mark1");
+          }}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

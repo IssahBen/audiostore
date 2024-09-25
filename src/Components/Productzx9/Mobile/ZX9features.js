@@ -1,6 +1,6 @@
 export default function ZX9features() {
   return (
-    <div className="w-full flex flex-col ">
+    <div className="w-full flex flex-col smallhide largehide ">
       <h3 className="manropebh4 font-bold">Features</h3>
       <p className=" text-ash manropemed leading-6 mt-5">
         Connect via Bluetooth or nearly any wired source. This speaker features

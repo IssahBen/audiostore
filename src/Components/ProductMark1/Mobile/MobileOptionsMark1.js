@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function MobileOptionsMark1() {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-full space-y-10">
+    <div className="flex flex-col w-full space-y-10 smallhide largehide">
       <p className="text-center manropebh6 font-bold">YOU MAY ALSO LIKE</p>
       <div className="flex flex-col w-full  items-center space-y-4">
         <div className="w-full h-[120px] mobilemark2option bg-cover rounded-xl"></div>

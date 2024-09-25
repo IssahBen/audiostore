@@ -1,6 +1,6 @@
 export default function ZX7features() {
   return (
-    <div className="w-full flex flex-col ">
+    <div className="w-full flex flex-col smallhide largehide ">
       <h3 className="manropebh4 font-bold">Features</h3>
       <p className=" text-ash manropemed leading-6 mt-5">
         Reap the advantages of a flat diaphragm tweeter cone. This provides a
