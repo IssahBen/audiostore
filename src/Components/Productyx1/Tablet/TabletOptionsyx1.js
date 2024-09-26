@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function TabletOptionsMark2() {
+export default function TabletOptionsyx1() {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col w-full space-y-10 pt-20 mediumhide largehide">

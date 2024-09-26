@@ -1,6 +1,7 @@
 import headphonepic from "../../../images/home/mobile/headphone.png";
 import earphonepic from "../../../images/home/mobile/earphone.png";
 import speakerpic from "../../../images/home/mobile/speaker.png";
+import { NavLink } from "react-router-dom";
 export default function TabletCategory() {
   return (
     <div className=" w-full h-full flex space-x-[6.66px]   mt-28 mediumhide largehide">
@@ -22,10 +23,10 @@ function Headphones() {
       <p className="text-black manropebh6 font-bold tracking-wide pt-20">
         HEADPHONES
       </p>
-      <a href="#home" className="flex space-x-2 mt-2 items-center">
+      <NavLink to="/headphones" className="flex space-x-2 mt-2 items-center">
         <p className="text-ash font-semibold ">SHOP</p>
         <p className="font-extrabold text-brown">{">"}</p>
-      </a>
+      </NavLink>
     </div>
   );
 }
@@ -36,10 +37,10 @@ function Speakers() {
       <p className="text-black manropebh6 font-bold tracking-wide pt-20">
         SPEAKERS
       </p>
-      <a href="#home" className="flex space-x-2 mt-2 items-center">
+      <NavLink to="/speakers" className="flex space-x-2 mt-2 items-center">
         <p className="text-ash font-semibold ">SHOP</p>
         <p className="font-extrabold text-brown">{">"}</p>
-      </a>
+      </NavLink>
     </div>
   );
 }
@@ -54,10 +55,10 @@ function Earphones() {
       <p className="text-black manropebh6 font-bold tracking-wide pt-20">
         EARPHONES
       </p>
-      <a href="#home" className="flex space-x-2 mt-2 items-center">
+      <NavLink to="/earphones" className="flex space-x-2 mt-2 items-center">
         <p className="text-ash font-semibold ">SHOP</p>
         <p className="font-extrabold text-brown">{">"}</p>
-      </a>
+      </NavLink>
     </div>
   );
 }

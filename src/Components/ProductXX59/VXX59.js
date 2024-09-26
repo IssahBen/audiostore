@@ -9,6 +9,12 @@ import TabletNav from "../Home/Tablet/TabletNav";
 import M59features from "./Mobile/M59features";
 import MobileVXX59 from "./Mobile/MobileVXX59";
 import MobileOptions59 from "./Mobile/MobileOptions59";
+import TabletVxx59 from "./Tablet/TabletVxx59";
+import Txx59features from "./Tablet/Txx59features";
+import TabletOptionsxx59 from "./Tablet/TabletOptionsxx59";
+import Tabletsummary from "../Home/Tablet/Tabletsummary";
+import Tabletfooter from "../Home/Tablet/TabletFooter";
+import TabletCategory from "../Home/Tablet/TabletCategory";
 
 export default function VXX59() {
   const navigate = useNavigate();
@@ -28,15 +34,25 @@ export default function VXX59() {
         </button>
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVXX59 />
+          <TabletVxx59 />
           <M59features />
+          <Txx59features />
           <MobileOptions59 />
+          <TabletOptionsxx59 />
           <div className="">
             <MobileCategory />
+            <TabletCategory />
+          </div>
+          <div className="w-full  mediumhide largehide">
+            <Tabletsummary />
           </div>
           <Mobilesummary />
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
           <Mobilefooter />
+        </div>
+        <div className="w-full h-[400px] mt-10 mediumhide largehide">
+          <Tabletfooter />
         </div>
       </main>
     </div>

@@ -8,6 +8,12 @@ import TabletNav from "../Home/Tablet/TabletNav";
 import MobileOptionsZX7 from "./Mobile/MobileOptionsZX7";
 import MobileVZX7 from "./Mobile/MobileVZX7";
 import ZX7features from "./Mobile/ZX7features";
+import TabletVzx7 from "./Tablet/TabletVzx7";
+import Tzx7features from "./Tablet/Tzx7features";
+import TabletOptionszx7 from "./Tablet/TabletOptionszx7";
+import TabletCategory from "../Home/Tablet/TabletCategory";
+import Tabletsummary from "../Home/Tablet/Tabletsummary";
+import Tabletfooter from "../Home/Tablet/TabletFooter";
 
 export default function VZX7() {
   const navigate = useNavigate();
@@ -27,15 +33,25 @@ export default function VZX7() {
         </button>
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVZX7 />
+          <TabletVzx7 />
           <ZX7features />
+          <Tzx7features />
           <MobileOptionsZX7 />
+          <TabletOptionszx7 />
           <div className="">
             <MobileCategory />
+            <TabletCategory />
           </div>
           <Mobilesummary />
+          <div className="w-full  mediumhide largehide">
+            <Tabletsummary />
+          </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
           <Mobilefooter />
+        </div>
+        <div className="w-full h-[400px] mt-10 mediumhide largehide">
+          <Tabletfooter />
         </div>
       </main>
     </div>

@@ -8,6 +8,13 @@ import MobileOptionsYX1 from "./Mobile/MobileOptionsYX1";
 import MobileVYX1 from "./Mobile/MobileVYX1";
 import YX1features from "./Mobile/YX1features";
 import { useNavigate } from "react-router-dom";
+import TabletVyx1 from "./Tablet/TabletVyx1";
+import Tyx1features from "./Tablet/Tyx1features";
+import TabletCategory from "../Home/Tablet/TabletCategory";
+import Tabletsummary from "../Home/Tablet/Tabletsummary";
+import TabletOptionsxx59 from "../ProductXX59/Tablet/TabletOptionsxx59";
+import TabletOptionsyx1 from "./Tablet/TabletOptionsyx1";
+import Tabletfooter from "../Home/Tablet/TabletFooter";
 export default function VYX1() {
   const navigate = useNavigate();
 
@@ -29,15 +36,25 @@ export default function VYX1() {
 
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVYX1 />
+          <TabletVyx1 />
           <YX1features />
+          <Tyx1features />
           <MobileOptionsYX1 />
+          <TabletOptionsyx1 />
           <div className="">
             <MobileCategory />
+            <TabletCategory />
           </div>
           <Mobilesummary />
+          <div className="w-full  mediumhide largehide">
+            <Tabletsummary />
+          </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
           <Mobilefooter />
+        </div>
+        <div className="w-full h-[400px] mt-10 mediumhide largehide">
+          <Tabletfooter />
         </div>
       </main>
     </div>

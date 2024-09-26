@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
 
-export default function TabletOptionsMark2() {
+export default function TabletOptionsMark1() {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col w-full space-y-10 pt-20 mediumhide largehide">
       <p className="text-center manropebh4 font-bold">YOU MAY ALSO LIKE</p>
       <div className="flex w-full space-x-4">
         <div className="flex  flex-col   items-center space-y-4  w-full ">
-          <div className="w-full h-[318px] tabletmark1option bg-cover rounded-xl"></div>
+          <div className="w-full h-[318px] tabletmark2option bg-cover rounded-xl"></div>
           <p className="text-center font-bold manropebh6 tracking-wide">
-            XX99 MARK I
+            XX99 MARK II
           </p>
           <button
             onClick={() => {
-              navigate("/headphones/mark1");
+              navigate("/headphones/mark2");
             }}
             className="bg-brown  tracking-widest hover:bg-hoverbrown text-white font-normal w-[160px] h-[48px]"
           >
