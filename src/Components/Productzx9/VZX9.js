@@ -14,6 +14,12 @@ import TabletOptionszx9 from "./Tablet/TabletOptionszx9";
 import TabletCategory from "../Home/Tablet/TabletCategory";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
+import DesktopVzx9 from "./Desktop/DesktopVzx9";
+import DesktopOptionszx9 from "./Desktop/DesktopOptionszx9";
+import Dzx9features from "./Desktop/Dzx9features";
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
 
 export default function VZX9() {
   const navigate = useNavigate();
@@ -34,17 +40,24 @@ export default function VZX9() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVZX9 />
           <TabletVzx9 />
+          <DesktopVzx9 />
           <ZX9features />
           <Tzx9features />
+          <Dzx9features />
           <MobileOptionsZX9 />
           <TabletOptionszx9 />
+          <DesktopOptionszx9 />
           <div className="">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <Mobilesummary />
           <div className="w-full  mediumhide largehide">
             <Tabletsummary />
+          </div>
+          <div className="w-full  desktophide">
+            <Desktopsummary />
           </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
@@ -52,6 +65,9 @@ export default function VZX9() {
         </div>
         <div className="w-full h-[400px] mt-10 mediumhide largehide">
           <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
         </div>
       </main>
     </div>

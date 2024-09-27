@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Desktopzx9() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex items-center space-x-28 h-[560px] desktophide   ">
       <div className="w-full h-[506px] desktopczx9 bg-cover"></div>
@@ -18,7 +21,12 @@ export default function Desktopzx9() {
             practical audio setups.
           </p>
         </div>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={() => {
+            navigate("/speakers/zx9");
+          }}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

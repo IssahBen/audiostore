@@ -14,6 +14,12 @@ import TabletOptionszx7 from "./Tablet/TabletOptionszx7";
 import TabletCategory from "../Home/Tablet/TabletCategory";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
+import DesktopVzx7 from "./Desktop/DesktopVzx7";
+import Dzx7features from "./Desktop/Dzx7features";
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
+import DesktopOptionszx7 from "./Desktop/DesktopOptionszx7";
 
 export default function VZX7() {
   const navigate = useNavigate();
@@ -34,17 +40,24 @@ export default function VZX7() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVZX7 />
           <TabletVzx7 />
+          <DesktopVzx7 />
           <ZX7features />
           <Tzx7features />
+          <Dzx7features />
           <MobileOptionsZX7 />
           <TabletOptionszx7 />
+          <DesktopOptionszx7 />
           <div className="">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <Mobilesummary />
           <div className="w-full  mediumhide largehide">
             <Tabletsummary />
+          </div>
+          <div className="w-full  desktophide">
+            <Desktopsummary />
           </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
@@ -52,6 +65,9 @@ export default function VZX7() {
         </div>
         <div className="w-full h-[400px] mt-10 mediumhide largehide">
           <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
         </div>
       </main>
     </div>

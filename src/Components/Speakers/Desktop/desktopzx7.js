@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Desktopzx7() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex flex-row-reverse items-center   desktophide h-[560px]  ">
       <div className="w-full h-[560px] desktopczx7 bg-cover"></div>
@@ -18,7 +21,12 @@ export default function Desktopzx7() {
           </p>
         </div>
 
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={() => {
+            navigate("/speakers/zx7");
+          }}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

@@ -15,6 +15,12 @@ import TabletOptionsxx59 from "./Tablet/TabletOptionsxx59";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
 import TabletCategory from "../Home/Tablet/TabletCategory";
+import DesktopVxx59 from "./Desktop/DesktopVxx59";
+import Dxx59features from "./Desktop/Dxx59features";
+import DesktopOptionsxx59 from "./Desktop/DesktopOptionsxx59";
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
 
 export default function VXX59() {
   const navigate = useNavigate();
@@ -35,16 +41,23 @@ export default function VXX59() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVXX59 />
           <TabletVxx59 />
+          <DesktopVxx59 />
           <M59features />
           <Txx59features />
+          <Dxx59features />
           <MobileOptions59 />
           <TabletOptionsxx59 />
+          <DesktopOptionsxx59 />
           <div className="">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <div className="w-full  mediumhide largehide">
             <Tabletsummary />
+          </div>
+          <div className="w-full  desktophide">
+            <Desktopsummary />
           </div>
           <Mobilesummary />
         </div>
@@ -53,6 +66,9 @@ export default function VXX59() {
         </div>
         <div className="w-full h-[400px] mt-10 mediumhide largehide">
           <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
         </div>
       </main>
     </div>

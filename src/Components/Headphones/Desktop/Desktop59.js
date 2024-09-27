@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Desktop59() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex  items-center space-x-28 h-[560px] desktophide ">
       <div className="w-full h-[560px] desktopc59 bg-cover"></div>
@@ -17,7 +20,12 @@ export default function Desktop59() {
             wireless headset is a brilliant companion at home or on the move.
           </p>
         </div>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={() => {
+            navigate("/headphones/xx59");
+          }}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

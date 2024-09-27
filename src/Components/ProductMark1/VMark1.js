@@ -14,6 +14,12 @@ import TabletOptionsMark1 from "./Tablet/TabletOptionsMark1";
 import TabletCategory from "../Home/Tablet/TabletCategory";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
+import DesktopOptionsMark1 from "./Desktop/DesktopOptionsMark1";
+import DesktopVMark1 from "./Desktop/DesktopVMark1";
+import DMark1features from "./Desktop/DMark1features";
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
 
 export default function VMARK1() {
   const navigate = useNavigate();
@@ -34,17 +40,24 @@ export default function VMARK1() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVMark1 />
           <TabletVMark1 />
+          <DesktopVMark1 />
           <Mark1features />
           <TMark1features />
+          <DMark1features />
           <MobileOptionsMark1 />
           <TabletOptionsMark1 />
+          <DesktopOptionsMark1 />
           <div className="">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <Mobilesummary />
           <div className="w-full  mediumhide largehide">
             <Tabletsummary />
+          </div>
+          <div className="w-full  desktophide">
+            <Desktopsummary />
           </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
@@ -52,6 +65,9 @@ export default function VMARK1() {
         </div>
         <div className="w-full h-[400px] mt-10 mediumhide largehide">
           <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
         </div>
       </main>
     </div>

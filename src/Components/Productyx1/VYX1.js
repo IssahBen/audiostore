@@ -15,6 +15,12 @@ import Tabletsummary from "../Home/Tablet/Tabletsummary";
 import TabletOptionsxx59 from "../ProductXX59/Tablet/TabletOptionsxx59";
 import TabletOptionsyx1 from "./Tablet/TabletOptionsyx1";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
+import DesktopVyx1 from "./Desktop/DesktopVyx1";
+import Dyx1features from "./Desktop/Dyx1features";
+import DesktopOptionsyx1 from "./Desktop/DesktopOptionsyx1";
+import DesktopCategory from "../Home/Desktop/DesktopCategory";
+import Desktopsummary from "../Home/Desktop/Desktopsummary";
+import Desktopfooter from "../Home/Desktop/DesktopFooter";
 export default function VYX1() {
   const navigate = useNavigate();
 
@@ -37,17 +43,24 @@ export default function VYX1() {
         <div className=" w-full flex flex-col px-5 bg-white space-y-8 ">
           <MobileVYX1 />
           <TabletVyx1 />
+          <DesktopVyx1 />
           <YX1features />
           <Tyx1features />
+          <Dyx1features />
           <MobileOptionsYX1 />
           <TabletOptionsyx1 />
+          <DesktopOptionsyx1 />
           <div className="">
             <MobileCategory />
             <TabletCategory />
+            <DesktopCategory />
           </div>
           <Mobilesummary />
           <div className="w-full  mediumhide largehide">
             <Tabletsummary />
+          </div>
+          <div className="w-full  desktophide">
+            <Desktopsummary />
           </div>
         </div>
         <div className="w-full h-[654px] mt-10 smallhide largehide">
@@ -55,6 +68,9 @@ export default function VYX1() {
         </div>
         <div className="w-full h-[400px] mt-10 mediumhide largehide">
           <Tabletfooter />
+        </div>
+        <div className="w-full h-[365px] mt-10 desktophide">
+          <Desktopfooter />
         </div>
       </main>
     </div>

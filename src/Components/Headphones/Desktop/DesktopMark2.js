@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function DesktopMark2() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex items-center space-x-28 h-[560px] desktophide   ">
       <div className="w-full h-[506px] desktopcmark2 bg-cover"></div>
@@ -19,7 +22,12 @@ export default function DesktopMark2() {
             balanced depth and precision of studio-quality sound
           </p>
         </div>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={() => {
+            navigate("/headphones/mark2");
+          }}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

@@ -324,6 +324,18 @@
 .tabletvmark2i3 {
   background-image: url("images/productx99Mark2/Tablet/image-gallery-3.jpg");
 }
+.desktopvmark2 {
+  background-image: url("images/productx99Mark2/Desktop/image-product.jpg");
+}
+.desktopvmark2i1 {
+  background-image: url("images/productx99Mark2/Desktop/image-gallery-1.jpg");
+}
+.desktopvmark2i2 {
+  background-image: url("images/productx99Mark2/Desktop/image-gallery-2.jpg");
+}
+.desktopvmark2i3 {
+  background-image: url("images/productx99Mark2/Desktop/image-gallery-3.jpg");
+}
 
 .tabletmark1option {
   background-image: url("images/shared/tablet/image-xx99-mark-one-headphones.jpg");
@@ -353,6 +365,18 @@
 .tabletvmark1i3 {
   background-image: url("images/productx99Mark1/Tablet/image-gallery-3.jpg");
 }
+.desktopvmark1 {
+  background-image: url("images/productx99Mark1/Desktop/image-product.jpg");
+}
+.desktopvmark1i1 {
+  background-image: url("images/productx99Mark1/Desktop/image-gallery-1.jpg");
+}
+.desktopvmark1i2 {
+  background-image: url("images/productx99Mark1/Desktop/image-gallery-2.jpg");
+}
+.desktopvmark1i3 {
+  background-image: url("images/productx99Mark1/Desktop/image-gallery-3.jpg");
+}
 
 .tabletvxx59 {
   background-image: url("images/productxx59/Tablet/image-product.jpg");
@@ -365,6 +389,18 @@
 }
 .tabletvxx59i3 {
   background-image: url("images/productxx59/Tablet/image-gallery-3.jpg");
+}
+.desktopvxx59 {
+  background-image: url("images/productxx59/Desktop/image-product.jpg");
+}
+.desktopvxx59i1 {
+  background-image: url("images/productxx59/Desktop/image-gallery-1.jpg");
+}
+.desktopvxx59i2 {
+  background-image: url("images/productxx59/Desktop/image-gallery-2.jpg");
+}
+.desktopvxx59i3 {
+  background-image: url("images/productxx59/Desktop/image-gallery-3.jpg");
 }
 
 .tabletvzx9 {
@@ -379,6 +415,18 @@
 .tabletvzx9i3 {
   background-image: url("images/productzx9/tablet/image-gallery-3.jpg");
 }
+.desktopvzx9 {
+  background-image: url("images/productzx9/Desktop/image-product.jpg");
+}
+.desktopvzx9i1 {
+  background-image: url("images/productzx9/Desktop/image-gallery-1.jpg");
+}
+.desktopvzx9i2 {
+  background-image: url("images/productzx9/Desktop/image-gallery-2.jpg");
+}
+.desktopvzx9i3 {
+  background-image: url("images/productzx9/Desktop/image-gallery-3.jpg");
+}
 .tabletvzx7 {
   background-image: url("images/productzx7/tablet/image-product.jpg");
 }
@@ -391,6 +439,18 @@
 .tabletvzx7i3 {
   background-image: url("images/productzx7/tablet/image-gallery-3.jpg");
 }
+.desktopvzx7 {
+  background-image: url("images/productzx7/Desktop/image-product.jpg");
+}
+.desktopvzx7i1 {
+  background-image: url("images/productzx7/Desktop/image-gallery-1.jpg");
+}
+.desktopvzx7i2 {
+  background-image: url("images/productzx7/Desktop/image-gallery-2.jpg");
+}
+.desktopvzx7i3 {
+  background-image: url("images/productzx7/Desktop/image-gallery-3.jpg");
+}
 .tabletvyx1 {
   background-image: url("images/productyx1/Tablet/image-product.jpg");
 }
@@ -402,4 +462,32 @@
 }
 .tabletvyx1i3 {
   background-image: url("images/productyx1/Tablet/image-gallery-3.jpg");
+}
+.desktopvyx1 {
+  background-image: url("images/productyx1/Desktop/image-product.jpg");
+}
+.desktopvyx1i1 {
+  background-image: url("images/productyx1/Desktop/image-gallery-1.jpg");
+}
+.desktopvyx1i2 {
+  background-image: url("images/productyx1/Desktop/image-gallery-2.jpg");
+}
+.desktopvyx1i3 {
+  background-image: url("images/productyx1/Desktop/image-gallery-3.jpg");
+}
+
+.desktopmark1option {
+  background-image: url("images/shared/desktop/image-xx99-mark-one-headphones.jpg");
+}
+.desktopmark2option {
+  background-image: url("images/shared/desktop/image-xx99-mark-two-headphones.jpg");
+}
+.desktopxx59option {
+  background-image: url("images/shared/desktop/image-xx59-headphones.jpg");
+}
+.desktopzx9option {
+  background-image: url("images/shared/desktop/image-zx9-speaker.jpg");
+}
+.desktopzx7option {
+  background-image: url("images/shared/desktop/image-zx7-speaker.jpg");
 }
