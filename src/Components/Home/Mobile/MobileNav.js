@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import { NavLink } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import MobileCategory from "./MobileCategory";
 export default function MobileNav() {
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
+  const navigate = useNavigate();
   function HandleClick() {
     let isOpen = hamburger.current?.classList.contains("open");
 
@@ -17,6 +19,9 @@ export default function MobileNav() {
       mobileMenu.current?.classList.add("flex");
       mobileMenu.current?.classList.remove("hidden");
     }
+  }
+  function Home() {
+    navigate("/");
   }
   return (
     <div className="w-full bg-black smallhide largehide">
@@ -37,23 +42,14 @@ export default function MobileNav() {
             <div
               id="menu"
               ref={mobileMenu}
-              className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-0 right-0 hidden flex-col  manropereg  w-1/2  py-1 pt-5 pb-5  pl-14 space-y-2   uppercase bg-lightblack text-tintwhite"
+              className="absolute  rounded-bl-2xl   z-20 tracking-tighter top-14 right-0 hidden   manropereg  w-full    pb-10 px-10  uppercase bg-white text-tintwhite"
             >
-              <NavLink to="/" className="hover:text-hoverbrown">
-                HOME
-              </NavLink>
-              <NavLink to="/headphones" className="hover:text-hoverbrown">
-                HEADPHONES
-              </NavLink>
-              <NavLink to="/speakers" className="hover:text-hoverbrown">
-                SPEAKERS
-              </NavLink>
-              <NavLink to="/earphones" className="hover:text-hoverbrown">
-                EARPHONES
-              </NavLink>
+              <MobileCategory />
             </div>
           </div>
-          <h1 className="ml-5 text-white manropemed font-bold">audiophile</h1>
+          <h1 onClick={Home} className="ml-5 text-white manropemed font-bold">
+            audiophile
+          </h1>
         </div>
         <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
