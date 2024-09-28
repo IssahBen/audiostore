@@ -8,8 +8,8 @@ export default function MobileVZX9() {
       <div className="flex flex-col w-full items-start space-y-4">
         <p className="text-brown manropereg tracking-[10px]">NEW PRODUCT</p>
         <div className="flex flex-col">
-          <p className="tracking-wide manropebh4  font-bold">XX59 </p>
-          <p className="tracking-wide manropebh4  font-bold"> HEADPHONES</p>
+          <p className="tracking-wide manropebh4  font-bold">ZX9</p>
+          <p className="tracking-wide manropebh4  font-bold"> SPEAKERS</p>
         </div>
         <p className=" text-ash manropemed leading-6">
           Upgrade your sound system with the all new ZX9 active speaker. It’s a

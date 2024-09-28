@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
 export default function DesktopHero() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/headphones/mark2");
+  }
   return (
     <div className="flex justify-between items-center   bg-black w-full h-[750px] desktophero px-12 desktophide ">
       <div className="flex flex-col space-y-8  items-start w-2/3 h-80 ">
@@ -12,7 +17,10 @@ export default function DesktopHero() {
           Experience natural,lifelike audio and exceptional build quality made
           for the passionate music enthusiast
         </p>
-        <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 ">
+        <button
+          onClick={HandleClick}
+          class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-10 "
+        >
           SEE PRODUCT
         </button>
       </div>

@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
 export default function Mobileyx1() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/earphones/yx1");
+  }
   return (
     <div className="flex flex-col space-y-8 w-full  mt-10 smallhide largehide">
       <div className="w-full h-52 yx1 bg-cover rounded-md"></div>
@@ -6,7 +11,10 @@ export default function Mobileyx1() {
         <p className="manropebh4 tracking-widest font-extrabold">
           YX1 EARPHONES
         </p>
-        <button class=" w-48  border-2 border-black text-black font-bold py-4 px-2 ">
+        <button
+          onClick={HandleClick}
+          class=" w-48  border-2 border-black text-black font-bold py-4 px-2 "
+        >
           SEE PRODUCT
         </button>
       </div>

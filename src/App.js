@@ -9,9 +9,9 @@ import VZX7 from "./Components/Productzx7/VZX7";
 import VZX9 from "./Components/Productzx9/VZX9";
 
 import Speakers from "./Components/Speakers/speakers";
-import Speaker from "./Components/Speakers/speakers";
+
 import { DataProvider } from "./Context/DataContext";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <DataProvider>

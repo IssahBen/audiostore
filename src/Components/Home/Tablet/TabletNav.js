@@ -1,8 +1,7 @@
 import { useRef } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function TabletNav() {
-  const navigate = useNavigate();
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
   function HandleClick() {

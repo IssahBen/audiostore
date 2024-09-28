@@ -1,7 +1,7 @@
 export default function Dzx9features() {
   return (
-    <div className="flex flex-col space-y-32">
-      <div className="w-full flex   desktophide pt-16">
+    <div className="flex flex-col space-y-32 desktophide">
+      <div className="w-full flex    pt-16">
         <div className="flex flex-col ">
           <h3 className="manropebh3 font-bold">FEATURES</h3>
           <p className=" text-ash manropemed leading-6 mt-5 w-[635px]">

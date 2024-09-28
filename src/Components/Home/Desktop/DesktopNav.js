@@ -1,23 +1,6 @@
-import { useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function DesktopNav() {
-  const hamburger = useRef(null);
-  const mobileMenu = useRef(null);
-  function HandleClick() {
-    let isOpen = hamburger.current?.classList.contains("open");
-
-    if (isOpen) {
-      hamburger.current?.classList.remove("open");
-
-      mobileMenu.current?.classList.remove("flex");
-      mobileMenu.current?.classList.add("hidden");
-    } else {
-      hamburger.current?.classList.add("open");
-      mobileMenu.current?.classList.add("flex");
-      mobileMenu.current?.classList.remove("hidden");
-    }
-  }
   return (
     <div className="w-full bg-black desktophide ">
       <div className="flex w-full bg-black py-4  px-12 items-center justify-between ">

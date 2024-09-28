@@ -1,7 +1,7 @@
 export default function M59features() {
   return (
     <div className="w-full flex flex-col smallhide largehide ">
-      <h3 className="manropebh4 font-bold">Features</h3>
+      <h3 className="manropebh4 font-bold">FEATURES</h3>
       <p className=" text-ash manropemed leading-6 mt-5">
         These headphones have been created from durable, high-quality materials
         tough enough to take anywhere. Its compact folding design fuses comfort

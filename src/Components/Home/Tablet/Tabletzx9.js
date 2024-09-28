@@ -1,5 +1,10 @@
 import zx9 from "../../../images/home/tablet/image-speaker-zx9.png";
+import { useNavigate } from "react-router-dom";
 export default function Tabletzx9() {
+  const navigate = useNavigate();
+  function HandleClick() {
+    navigate("/speakers/zx9");
+  }
   return (
     <div className="w-full h-[720px] mediumhide  largehide flex flex-col space-y-4 circles items-center bg-cover bg-no-repeat bg-brown py-8 mt-24">
       <img src={zx9} alt="" className="w-[190px] h-[230px]" />
@@ -11,7 +16,10 @@ export default function Tabletzx9() {
         Upgrade to premium speakers that are phoenomenally built to deliver
         truly remarkable sound
       </p>
-      <button class="bg-black text-white font-medium w-[160px] h-[48px] ">
+      <button
+        onClick={HandleClick}
+        class="bg-black text-white font-medium w-[160px] h-[48px] "
+      >
         SEE PRODUCT
       </button>
     </div>

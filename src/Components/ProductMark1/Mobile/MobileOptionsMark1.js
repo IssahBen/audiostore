@@ -8,11 +8,11 @@ export default function MobileOptionsMark1() {
       <div className="flex flex-col w-full  items-center space-y-4">
         <div className="w-full h-[120px] mobilemark2option bg-cover rounded-xl"></div>
         <p className="text-center font-bold manropebh6 tracking-wide">
-          XX99 MARK I
+          XX99 MARK II
         </p>
         <button
           onClick={() => {
-            navigate("/headphones/mark1");
+            navigate("/headphones/mark2");
           }}
           className="bg-brown  tracking-widest hover:bg-hoverbrown text-white font-normal w-[160px] h-[48px]"
         >

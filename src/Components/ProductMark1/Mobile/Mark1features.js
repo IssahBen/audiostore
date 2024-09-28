@@ -1,7 +1,7 @@
 export default function Mark1features() {
   return (
     <div className="w-full flex flex-col smallhide largehide">
-      <h3 className="manropebh4 font-bold">Features</h3>
+      <h3 className="manropebh4 font-bold">FEATURES</h3>
       <p className=" text-ash manropemed leading-6 mt-5">
         Features As the headphones all others are measured against, the XX99
         Mark I demonstrates over five decades of audio expertise, redefining the

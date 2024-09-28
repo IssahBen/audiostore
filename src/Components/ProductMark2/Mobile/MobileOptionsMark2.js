@@ -12,7 +12,7 @@ export default function MobileOptionsMark2() {
         </p>
         <button
           onClick={() => {
-            navigate("/headphones/mark2");
+            navigate("/headphones/mark1");
           }}
           className="bg-brown  tracking-widest hover:bg-hoverbrown text-white font-normal w-[160px] h-[48px]"
         >

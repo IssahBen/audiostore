@@ -12,7 +12,7 @@ import TabletVyx1 from "./Tablet/TabletVyx1";
 import Tyx1features from "./Tablet/Tyx1features";
 import TabletCategory from "../Home/Tablet/TabletCategory";
 import Tabletsummary from "../Home/Tablet/Tabletsummary";
-import TabletOptionsxx59 from "../ProductXX59/Tablet/TabletOptionsxx59";
+
 import TabletOptionsyx1 from "./Tablet/TabletOptionsyx1";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
 import DesktopVyx1 from "./Desktop/DesktopVyx1";
