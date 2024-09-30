@@ -29,30 +29,36 @@ export default function Home() {
         <MobileNav />
         <TabletNav />
         <DesktopNav />
-        <MobileHero />
-        <TabletHero />
-        <DesktopHero />
-        <div className=" w-full flex flex-col px-12 bg-white ">
-          <MobileCategory />
-          <TabletCategory />
-          <DesktopCategory />
-          <Mobilezx9 />
-          <Tabletzx9 />
-          <Desktopzx9 />
+        <div
+          id="overlay"
+          className="w-full h-lvh absolute z-10 hidden overflow-hidden bg-black opacity-80"
+        ></div>
+        <div id="body" className="w-full h-full">
+          <MobileHero />
+          <TabletHero />
+          <DesktopHero />
+          <div className=" w-full flex flex-col px-12 bg-white ">
+            <MobileCategory />
+            <TabletCategory />
+            <DesktopCategory />
+            <Mobilezx9 />
+            <Tabletzx9 />
+            <Desktopzx9 />
 
-          <Mobilezx7 />
-          <Tabletzx7 />
-          <Desktopzx7 />
-          <Tabletyx1 />
-          <Mobileyx1 />
-          <Desktopyx1 />
-          <Mobilesummary />
-          <Tabletsummary />
-          <Desktopsummary />
+            <Mobilezx7 />
+            <Tabletzx7 />
+            <Desktopzx7 />
+            <Tabletyx1 />
+            <Mobileyx1 />
+            <Desktopyx1 />
+            <Mobilesummary />
+            <Tabletsummary />
+            <Desktopsummary />
+          </div>
+          <MobileFooter />
+          <Tabletfooter />
+          <Desktopfooter />
         </div>
-        <MobileFooter />
-        <Tabletfooter />
-        <Desktopfooter />
       </main>
     </div>
   );

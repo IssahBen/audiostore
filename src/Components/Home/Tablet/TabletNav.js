@@ -8,16 +8,24 @@ export default function TabletNav() {
   const navigate = useNavigate();
   function HandleClick() {
     let isOpen = hamburger.current?.classList.contains("open");
+    let body = document.getElementById("body");
+    let modal = document.getElementById("menu");
+    let overlay = document.getElementById("overlay");
 
     if (isOpen) {
       hamburger.current?.classList.remove("open");
 
       mobileMenu.current?.classList.remove("flex");
       mobileMenu.current?.classList.add("hidden");
+      overlay.classList.add("hidden");
+      body.style.position = "";
     } else {
       hamburger.current?.classList.add("open");
       mobileMenu.current?.classList.add("flex");
       mobileMenu.current?.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+
+      body.style.position = "fixed";
     }
   }
   function Home() {
