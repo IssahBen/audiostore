@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { NavLink } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 import MobileCategory from "./MobileCategory";
 export default function MobileNav() {
@@ -9,7 +9,7 @@ export default function MobileNav() {
   function HandleClick() {
     let isOpen = hamburger.current?.classList.contains("open");
     let body = document.getElementById("body");
-    let modal = document.getElementById("menu");
+
     let overlay = document.getElementById("overlay");
 
     if (isOpen) {
