@@ -18,7 +18,7 @@ export default function MobileVZX9() {
           creating new possibilities for more pleasing and practical audio
           setups.
         </p>
-        <p className=" manropebh5 font-bold">$4500</p>
+        <p className=" manropebh5 font-bold">$4,500</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
             value={zx9s}

@@ -2,6 +2,7 @@ import { useRef } from "react";
 
 import { useNavigate } from "react-router-dom";
 import MobileCategory from "./MobileCategory";
+import MobileCart from "./MobileCart";
 export default function MobileNav() {
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
@@ -71,8 +72,10 @@ export default function MobileNav() {
             <div
               id="cart"
               ref={cart}
-              className="absolute  rounded-2xl   z-20 tracking-tighter top-20  right-6  hidden   manropereg  w-[327px]  h-[488px]      uppercase bg-white text-tintwhite"
-            ></div>
+              className="absolute  rounded-2xl   z-20 tracking-tighter top-20  right-6  hidden   manropereg  w-[327px]       uppercase bg-white text-tintwhite"
+            >
+              <MobileCart />
+            </div>
           </div>
           <h1 onClick={Home} className="ml-5 text-white manropemed font-bold">
             audiophile
