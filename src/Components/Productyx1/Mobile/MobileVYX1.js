@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+import { useData } from "../../../Context/DataContext";
 export default function MobileVYX1() {
-  const [numberofmark2, setNumberofMark2] = useState(1);
+  const [yx1s, setYx1s] = useState(0);
+  const [setNumberOfYx1] = useData();
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-5 smallhide largehide">
       <div className="w-full h-[352px] mobilevyx1 bg-cover"></div>
@@ -19,14 +20,19 @@ export default function MobileVYX1() {
         <p className=" manropebh5 font-bold">$599</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
-            value={numberofmark2}
+            value={yx1s}
             onChange={(e) => {
-              setNumberofMark2(e.target.value);
+              setYx1s(e.target.value);
             }}
             className="w-[120px] bg-ashwhite text-center font-bold"
             type="text"
           />
-          <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 ">
+          <button
+            onClick={() => {
+              setNumberOfYx1(yx1s);
+            }}
+            class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 "
+          >
             ADD TO CART
           </button>
         </div>

@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+import { useData } from "../../../Context/DataContext";
 export default function TabletVMark1() {
-  const [numberofmark2, setNumberofMark2] = useState(1);
+  const [setNumberOfMark1] = useData();
+  const [mark1s, setMark1s] = useState(0);
   return (
     <div className="w-full flex  h-[480px] space-x-14 items-center  mt-5 mediumhide largehide">
       <div className="w-full h-[480px] tabletvmark1 bg-cover"></div>
@@ -18,14 +19,19 @@ export default function TabletVMark1() {
         <p className=" manropebh5 font-bold">$1,750</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
-            value={numberofmark2}
+            value={mark1s}
             onChange={(e) => {
-              setNumberofMark2(e.target.value);
+              setMark1s(e.target.value);
             }}
             className="w-[120px] bg-ashwhite text-center font-bold"
             type="text"
           />
-          <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 ">
+          <button
+            onClick={() => {
+              setNumberOfMark1(mark1s);
+            }}
+            class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 "
+          >
             ADD TO CART
           </button>
         </div>

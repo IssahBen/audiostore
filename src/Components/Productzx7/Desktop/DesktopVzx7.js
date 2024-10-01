@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+import { useData } from "../../../Context/DataContext";
 export default function DesktopVzx7() {
-  const [numberofmark2, setNumberofMark2] = useState(1);
+  const [zx7s, setzx7s] = useState(0);
+  const [setNumberOfZx7] = useData();
   return (
     <div className="w-full flex  h-[560px] space-x-14 items-center  mt-5 desktophide">
       <div className="w-full h-[560px] desktopvzx7 bg-cover"></div>
@@ -19,14 +20,19 @@ export default function DesktopVzx7() {
         <p className=" manropebh5 font-bold">$3,500</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
-            value={numberofmark2}
+            value={zx7s}
             onChange={(e) => {
-              setNumberofMark2(e.target.value);
+              setzx7s(e.target.value);
             }}
             className="w-[120px] bg-ashwhite text-center font-bold"
             type="text"
           />
-          <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 ">
+          <button
+            onClick={() => {
+              setNumberOfZx7(zx7s);
+            }}
+            class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 "
+          >
             ADD TO CART
           </button>
         </div>

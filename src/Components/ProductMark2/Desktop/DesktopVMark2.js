@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useData } from "../../../Context/DataContext";
 
 export default function DesktopVMark2() {
-  const [numberofmark2, setNumberofMark2] = useState(1);
+  const [mark2s, setMark2s] = useState(0);
+  const [setNumberOfMark2] = useData();
   return (
     <div className="w-full flex  h-[560px] space-x-14 items-center  mt-5 desktophide">
       <div className="w-full h-[560px] desktopvmark2 bg-cover"></div>
@@ -19,14 +21,19 @@ export default function DesktopVMark2() {
         <p className=" manropebh5 font-bold">$2,999</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
           <input
-            value={numberofmark2}
+            value={mark2s}
             onChange={(e) => {
-              setNumberofMark2(e.target.value);
+              setMark2s(e.target.value);
             }}
             className="w-[120px] bg-ashwhite text-center font-bold"
             type="text"
           />
-          <button class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 ">
+          <button
+            onClick={() => {
+              setNumberOfMark2(mark2s);
+            }}
+            class="bg-brown hover:bg-hoverbrown text-white font-normal py-4 px-4 "
+          >
             ADD TO CART
           </button>
         </div>
