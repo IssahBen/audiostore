@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function MobileVMark1() {
   const [mark1s, setMark1s] = useState(0);
-  const [setNumberOfMark1] = useData();
+  const { setNumberOfMark1 } = useData();
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-5 smallhide largehide">
       <div className="w-full h-[352px] mobilevmark1 bg-cover"></div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function MobileVYX1() {
   const [yx1s, setYx1s] = useState(0);
-  const [setNumberOfYx1] = useData();
+  const { setNumberOfYx1 } = useData();
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-5 smallhide largehide">
       <div className="w-full h-[352px] mobilevyx1 bg-cover"></div>

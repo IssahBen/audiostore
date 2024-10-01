@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function DesktopVMark1() {
   const [mark1s, setMark1s] = useState(0);
-  const [setNumberOfMark1] = useData();
+  const { setNumberOfMark1 } = useData();
   return (
     <div className="w-full flex  h-[560px] space-x-14 items-center  mt-5 desktophide">
       <div className="w-full h-[560px] desktopvmark1 bg-cover"></div>

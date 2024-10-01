@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function TabletVzx7() {
   const [zx7s, setzx7s] = useState(0);
-  const [setNumberOfZx7] = useData();
+  const { setNumberOfZx7 } = useData();
   return (
     <div className="w-full flex  h-[480px] space-x-14 items-center  mt-5 mediumhide largehide">
       <div className="w-full h-[480px] tabletvzx7 bg-cover"></div>

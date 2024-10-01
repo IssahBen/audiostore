@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function TabletVMark1() {
-  const [setNumberOfMark1] = useData();
+  const { setNumberOfMark1 } = useData();
   const [mark1s, setMark1s] = useState(0);
   return (
     <div className="w-full flex  h-[480px] space-x-14 items-center  mt-5 mediumhide largehide">

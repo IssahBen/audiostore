@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function MobileVZX9() {
   const [zx9s, setzx9s] = useState(0);
-  const [setNumberOfZx9] = useData();
+  const { setNumberOfZx9 } = useData();
   return (
     <div className="w-full flex flex-col space-y-8 h-[724px] mt-5 smallhide largehide">
       <div className="w-full h-[352px] mobilevzx9 bg-cover"></div>

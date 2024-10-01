@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function TabletVxx59() {
   const [xx59s, setxx59s] = useState(0);
-  const [setNumberOfxx59] = useData();
+  const { setNumberOfxx59 } = useData();
   return (
     <div className="w-full flex  h-[480px] space-x-14 items-center  mt-5 mediumhide largehide">
       <div className="w-full h-[480px] tabletvxx59 bg-cover"></div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function DesktopVyx1() {
   const [yx1s, setYx1s] = useState(0);
-  const [setNumberOfYx1] = useData();
+  const { setNumberOfYx1 } = useData();
   return (
     <div className="w-full flex  h-[560px] space-x-14 items-center  mt-5 desktophide">
       <div className="w-full h-[560px] desktopvyx1 bg-cover"></div>

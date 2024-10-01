@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function DesktopVxx59() {
   const [xx59s, setxx59s] = useState(0);
-  const [setNumberOfxx59] = useData();
+  const { setNumberOfxx59 } = useData();
   return (
     <div className="w-full flex  h-[560px] space-x-14 items-center  mt-5 desktophide">
       <div className="w-full h-[560px] desktopvxx59 bg-cover"></div>
