@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const DataContext = createContext();
 
@@ -9,6 +9,33 @@ function DataProvider({ children }) {
   const [numberOfZx7, setNumberOfZx7] = useState(0);
   const [numberOfZx9, setNumberOfZx9] = useState(0);
   const [numberOfYx1, setNumberOfYx1] = useState(0);
+  const [numberofitems, setNumberOfItems] = useState(0);
+
+  useEffect(() => {
+    const list = [
+      numberOfMark1,
+      numberOfMark2,
+      numberOfYx1,
+      numberOfZx7,
+      numberOfZx9,
+      numberOfxx59,
+    ];
+
+    let items = 0;
+    for (let i = 0; i < list.length; i++) {
+      if (list[i] !== 0) {
+        items += 1;
+      }
+    }
+    setNumberOfItems(items);
+  }, [
+    numberOfMark1,
+    numberOfMark2,
+    numberOfYx1,
+    numberOfZx7,
+    numberOfZx9,
+    numberOfxx59,
+  ]);
   return (
     <DataContext.Provider
       value={{
@@ -24,6 +51,7 @@ function DataProvider({ children }) {
         setNumberOfZx9,
         numberOfYx1,
         setNumberOfYx1,
+        numberofitems,
       }}
     >
       {children}

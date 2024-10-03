@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useData } from "../../../Context/DataContext";
 export default function MobileCart() {
   const [numberofitems, setNumberOfItems] = useState(0);
+  const [sum, setSum] = useState(0);
   const {
     numberOfMark1,
     setNumberOfMark1,
@@ -16,13 +17,6 @@ export default function MobileCart() {
     numberOfYx1,
     setNumberOfYx1,
   } = useData();
-  const total =
-    numberOfMark2 * 2999 +
-    numberOfMark2 * 1750 +
-    numberOfxx59 * 899 +
-    numberOfYx1 * 599 +
-    numberOfZx7 * 3500 +
-    numberOfZx9 * 4500;
 
   useEffect(() => {
     const list = [
@@ -33,6 +27,15 @@ export default function MobileCart() {
       numberOfZx9,
       numberOfxx59,
     ];
+    const total =
+      numberOfMark2 * 2999 +
+      numberOfMark1 * 1750 +
+      numberOfxx59 * 899 +
+      numberOfYx1 * 599 +
+      numberOfZx7 * 3500 +
+      numberOfZx9 * 4500;
+    setSum(total);
+
     let items = 0;
     for (let i = 0; i < list.length; i++) {
       if (list[i] !== 0) {
@@ -57,6 +60,7 @@ export default function MobileCart() {
     setNumberOfYx1(0);
     setNumberOfxx59(0);
   }
+
   return (
     <div className="w-full h-full flex flex-col  space-y-2 px-10 py-5">
       <div className="flex w-full justify-between">
@@ -65,15 +69,39 @@ export default function MobileCart() {
           Remove all
         </p>
       </div>
-      {numberOfMark1 === 0 ? "" : <Mark1 mark1s={numberOfMark1} />}
-      {numberOfMark2 === 0 ? "" : <Mark2 mark2s={numberOfMark2} />}
-      {numberOfxx59 === 0 ? "" : <Xx59 xx59s={numberOfxx59} />}
-      {numberOfZx7 === 0 ? "" : <Zx7 zx7s={numberOfZx7} />}
-      {numberOfZx9 === 0 ? "" : <Zx9 zx9s={numberOfZx9} />}
-      {numberOfYx1 === 0 ? "" : <Yx1 yx1s={numberOfYx1} />}
+      {numberOfMark1 === 0 ? (
+        ""
+      ) : (
+        <Mark1 mark1s={numberOfMark1} setmark1={setNumberOfMark1} />
+      )}
+      {numberOfMark2 === 0 ? (
+        ""
+      ) : (
+        <Mark2 mark2s={numberOfMark2} setmark2={setNumberOfMark2} />
+      )}
+      {numberOfxx59 === 0 ? (
+        ""
+      ) : (
+        <Xx59 xx59s={numberOfxx59} setxx59={setNumberOfxx59} />
+      )}
+      {numberOfZx7 === 0 ? (
+        ""
+      ) : (
+        <Zx7 zx7s={numberOfZx7} setzx7={setNumberOfZx7} />
+      )}
+      {numberOfZx9 === 0 ? (
+        ""
+      ) : (
+        <Zx9 zx9s={numberOfZx9} setzx9={setNumberOfZx9} />
+      )}
+      {numberOfYx1 === 0 ? (
+        ""
+      ) : (
+        <Yx1 yx1s={numberOfYx1} setyx1={setNumberOfYx1} />
+      )}
       <div className="flex justify-between">
         <p className="font-medium text-ash manropebh6">Total</p>
-        <p className="font-bold text-black manropebh5">${total}</p>
+        <p className="font-bold text-black manropebh5">${sum}</p>
       </div>
       <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] ">
         CHECKOUT
@@ -82,7 +110,7 @@ export default function MobileCart() {
   );
 }
 
-function Mark2({ mark2s }) {
+function Mark2({ mark2s, setmark2 }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -92,15 +120,42 @@ function Mark2({ mark2s }) {
           <p className="font-semi-bold text-ash">$ 2,999</p>
         </div>
       </div>
-      <input
-        value={mark2s}
-        className="w-[96px] h-[32px] text-black bg-ashwhite text-center font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (mark2s > 0) {
+              setmark2(parseInt(mark2s) - 1);
+            } else {
+              setmark2(mark2s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={mark2s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (mark2s >= 0) {
+              setmark2(parseInt(mark2s) + 1);
+            } else {
+              setmark2(mark2s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }
-function Mark1({ mark1s }) {
+function Mark1({ mark1s, setmark1 }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -110,15 +165,42 @@ function Mark1({ mark1s }) {
           <p className="font-semi-bold text-ash">$ 1,750</p>
         </div>
       </div>
-      <input
-        value={mark1s}
-        className="w-[96px] h-[32px] text-black bg-ashwhite text-center font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (mark1s > 0) {
+              setmark1(parseInt(mark1s) - 1);
+            } else {
+              setmark1(mark1s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={mark1s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (mark1s >= 0) {
+              setmark1(parseInt(mark1s) + 1);
+            } else {
+              setmark1(mark1s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }
-function Xx59({ xx59s }) {
+function Xx59({ xx59s, setxx59 }) {
   return (
     <div className="flex w-full justify-between items-center">
       <div className="flex space-x-2 items-center">
@@ -128,15 +210,42 @@ function Xx59({ xx59s }) {
           <p className="font-semi-bold text-ash">$899</p>
         </div>
       </div>
-      <input
-        value={xx59s}
-        className="w-[96px] h-[32px] text-black bg-ashwhite text-center font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (xx59s > 0) {
+              setxx59(parseInt(xx59s) - 1);
+            } else {
+              setxx59(xx59s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={xx59s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (xx59s >= 0) {
+              setxx59(parseInt(xx59s) + 1);
+            } else {
+              setxx59(xx59s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }
-function Zx7({ zx7s }) {
+function Zx7({ zx7s, setzx7 }) {
   return (
     <div className="flex w-full justify-between  items-center">
       <div className="flex space-x-2 items-center">
@@ -146,15 +255,42 @@ function Zx7({ zx7s }) {
           <p className="font-semi-bold text-ash">$3,500</p>
         </div>
       </div>
-      <input
-        value={zx7s}
-        className="w-[96px] h-[32px] text-black bg-ashwhite text-center font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (zx7s > 0) {
+              setzx7(parseInt(zx7s) - 1);
+            } else {
+              setzx7(zx7s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={zx7s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (zx7s >= 0) {
+              setzx7(parseInt(zx7s) + 1);
+            } else {
+              setzx7(zx7s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }
-function Zx9({ zx9s }) {
+function Zx9({ zx9s, setzx9 }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -164,15 +300,42 @@ function Zx9({ zx9s }) {
           <p className="font-semi-bold text-ash">$4,500</p>
         </div>
       </div>
-      <input
-        value={zx9s}
-        className="w-[96px] text-black h-[32px] bg-ashwhite text-center font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (zx9s > 0) {
+              setzx9(parseInt(zx9s) - 1);
+            } else {
+              setzx9(zx9s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={zx9s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (zx9s >= 0) {
+              setzx9(parseInt(zx9s) + 1);
+            } else {
+              setzx9(zx9s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }
-function Yx1({ yx1s }) {
+function Yx1({ yx1s, setyx1 }) {
   return (
     <div className="flex w-full justify-between items-center">
       <div className="flex space-x-2 items-center">
@@ -182,11 +345,38 @@ function Yx1({ yx1s }) {
           <p className="font-semi-bold text-ash">$4,500</p>
         </div>
       </div>
-      <input
-        value={yx1s}
-        className="w-[96px] h-[32px] bg-ashwhite text-center  text-black font-bold"
-        type="text"
-      />
+      <div className="flex w-[96px] bg-ashwhite items-center px-5">
+        <p
+          onClick={() => {
+            if (yx1s > 0) {
+              setyx1(parseInt(yx1s) - 1);
+            } else {
+              setyx1(yx1s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          -
+        </p>
+        <input
+          value={yx1s}
+          readOnly
+          className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+          type="text"
+        />
+        <p
+          onClick={() => {
+            if (yx1s >= 0) {
+              setyx1(parseInt(yx1s) + 1);
+            } else {
+              setyx1(yx1s);
+            }
+          }}
+          className="font-bold cursor-pointer"
+        >
+          +
+        </p>
+      </div>
     </div>
   );
 }

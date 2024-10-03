@@ -1,9 +1,10 @@
 import { useRef } from "react";
-
+import { useData } from "../../../Context/DataContext";
 import { useNavigate } from "react-router-dom";
 import MobileCategory from "./MobileCategory";
 import MobileCart from "./MobileCart";
 export default function MobileNav() {
+  const { numberofitems } = useData();
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
   const cart = useRef(null);
@@ -93,6 +94,13 @@ export default function MobileNav() {
             fill-rule="nonzero"
           />
         </svg>
+        {numberofitems === 0 ? (
+          ""
+        ) : (
+          <p className="absolute right-[2px] top-[5px]  text-white font-bold">
+            {numberofitems}
+          </p>
+        )}
       </div>
       <div className="w-full ">
         <div className="border-t-[0.5px] border-t-ash "></div>
