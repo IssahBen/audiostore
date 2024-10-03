@@ -19,14 +19,38 @@ export default function TabletVyx1() {
         </p>
         <p className=" manropebh5 font-bold">$599</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
-          <input
-            value={yx1s}
-            onChange={(e) => {
-              setYx1s(e.target.value);
-            }}
-            className="w-[120px] bg-ashwhite text-center font-bold"
-            type="text"
-          />
+          <div className="flex w-[120px] bg-ashwhite items-center px-5">
+            <p
+              onClick={() => {
+                if (yx1s > 0) {
+                  setYx1s(parseInt(yx1s) - 1);
+                } else {
+                  setYx1s(yx1s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              -
+            </p>
+            <input
+              value={yx1s}
+              readOnly
+              className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+              type="text"
+            />
+            <p
+              onClick={() => {
+                if (yx1s >= 0) {
+                  setYx1s(parseInt(yx1s) + 1);
+                } else {
+                  setYx1s(yx1s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              +
+            </p>
+          </div>
           <button
             onClick={() => {
               setNumberOfYx1(yx1s);

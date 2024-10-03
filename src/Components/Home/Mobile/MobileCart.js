@@ -64,7 +64,9 @@ export default function MobileCart() {
   return (
     <div className="w-full h-full flex flex-col  space-y-2 px-10 py-5">
       <div className="flex w-full justify-between">
-        <h2 className="text-black manropebh6 font-bold">CART{numberofitems}</h2>
+        <h2 className="text-black manropebh6 font-bold">
+          CART({numberofitems})
+        </h2>
         <p onClick={Removeall} className="manropemed text-ash underline">
           Remove all
         </p>
@@ -101,7 +103,7 @@ export default function MobileCart() {
       )}
       <div className="flex justify-between">
         <p className="font-medium text-ash manropebh6">Total</p>
-        <p className="font-bold text-black manropebh5">${sum}</p>
+        <p className="font-bold text-black manropebh5">$ {sum}</p>
       </div>
       <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] ">
         CHECKOUT

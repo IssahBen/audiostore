@@ -19,14 +19,38 @@ export default function DesktopVxx59() {
         </p>
         <p className=" manropebh5 font-bold">$899</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
-          <input
-            value={xx59s}
-            onChange={(e) => {
-              setxx59s(e.target.value);
-            }}
-            className="w-[120px] bg-ashwhite text-center font-bold"
-            type="text"
-          />
+          <div className="flex w-[120px] bg-ashwhite items-center px-5">
+            <p
+              onClick={() => {
+                if (xx59s > 0) {
+                  setxx59s(parseInt(xx59s) - 1);
+                } else {
+                  setxx59s(xx59s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              -
+            </p>
+            <input
+              value={xx59s}
+              readOnly
+              className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+              type="text"
+            />
+            <p
+              onClick={() => {
+                if (xx59s >= 0) {
+                  setxx59s(parseInt(xx59s) + 1);
+                } else {
+                  setxx59s(xx59s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              +
+            </p>
+          </div>
           <button
             onClick={() => {
               setNumberOfxx59(xx59s);

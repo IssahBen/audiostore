@@ -20,14 +20,38 @@ export default function DesktopVMark2() {
         </p>
         <p className=" manropebh5 font-bold">$2,999</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
-          <input
-            value={mark2s}
-            onChange={(e) => {
-              setMark2s(e.target.value);
-            }}
-            className="w-[120px] bg-ashwhite text-center font-bold"
-            type="text"
-          />
+          <div className="flex w-[120px] bg-ashwhite items-center px-5">
+            <p
+              onClick={() => {
+                if (mark2s > 0) {
+                  setMark2s(parseInt(mark2s) - 1);
+                } else {
+                  setMark2s(mark2s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              -
+            </p>
+            <input
+              value={mark2s}
+              readOnly
+              className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+              type="text"
+            />
+            <p
+              onClick={() => {
+                if (mark2s >= 0) {
+                  setMark2s(parseInt(mark2s) + 1);
+                } else {
+                  setMark2s(mark2s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              +
+            </p>
+          </div>
           <button
             onClick={() => {
               setNumberOfMark2(mark2s);

@@ -19,14 +19,38 @@ export default function DesktopVzx7() {
         </p>
         <p className=" manropebh5 font-bold">$3,500</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
-          <input
-            value={zx7s}
-            onChange={(e) => {
-              setzx7s(e.target.value);
-            }}
-            className="w-[120px] bg-ashwhite text-center font-bold"
-            type="text"
-          />
+          <div className="flex w-[120px] bg-ashwhite items-center px-5">
+            <p
+              onClick={() => {
+                if (zx7s > 0) {
+                  setzx7s(parseInt(zx7s) - 1);
+                } else {
+                  setzx7s(zx7s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              -
+            </p>
+            <input
+              value={zx7s}
+              readOnly
+              className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+              type="text"
+            />
+            <p
+              onClick={() => {
+                if (zx7s >= 0) {
+                  setzx7s(parseInt(zx7s) + 1);
+                } else {
+                  setzx7s(zx7s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              +
+            </p>
+          </div>
           <button
             onClick={() => {
               setNumberOfZx7(zx7s);

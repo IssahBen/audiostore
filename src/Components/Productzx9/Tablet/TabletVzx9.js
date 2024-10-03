@@ -20,14 +20,38 @@ export default function TabletVzx9() {
         </p>
         <p className=" manropebh5 font-bold">$4,500</p>
         <div className="flex h-[48px] w-[296px] space-x-2">
-          <input
-            value={zx9s}
-            onChange={(e) => {
-              setzx9s(e.target.value);
-            }}
-            className="w-[120px] bg-ashwhite text-center font-bold"
-            type="text"
-          />
+          <div className="flex w-[120px] bg-ashwhite items-center px-5">
+            <p
+              onClick={() => {
+                if (zx9s > 0) {
+                  setzx9s(parseInt(zx9s) - 1);
+                } else {
+                  setzx9s(zx9s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              -
+            </p>
+            <input
+              value={zx9s}
+              readOnly
+              className="w-full h-[32px] text-black   bg-ashwhite text-center font-bold"
+              type="text"
+            />
+            <p
+              onClick={() => {
+                if (zx9s >= 0) {
+                  setzx9s(parseInt(zx9s) + 1);
+                } else {
+                  setzx9s(zx9s);
+                }
+              }}
+              className="font-bold cursor-pointer"
+            >
+              +
+            </p>
+          </div>
           <button
             onClick={() => {
               setNumberOfZx9(zx9s);
