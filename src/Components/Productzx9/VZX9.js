@@ -52,9 +52,11 @@ export default function VZX9() {
             <MobileOptionsZX9 />
             <TabletOptionszx9 />
             <DesktopOptionszx9 />
-            <div className="">
+            <div className="w-full">
               <MobileCategory />
-              <TabletCategory />
+              <div className="flex pl-14 pb-14  w-full items-center justify-center">
+                <TabletCategory />
+              </div>
               <DesktopCategory />
             </div>
             <Mobilesummary />

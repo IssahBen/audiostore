@@ -52,9 +52,11 @@ export default function VMARK1() {
             <MobileOptionsMark1 />
             <TabletOptionsMark1 />
             <DesktopOptionsMark1 />
-            <div className="">
+            <div className="w-full">
               <MobileCategory />
-              <TabletCategory />
+              <div className="flex pl-14 pb-14  w-full items-center justify-center">
+                <TabletCategory />
+              </div>
               <DesktopCategory />
             </div>
             <Mobilesummary />

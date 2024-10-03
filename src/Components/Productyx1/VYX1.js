@@ -54,9 +54,11 @@ export default function VYX1() {
             <MobileOptionsYX1 />
             <TabletOptionsyx1 />
             <DesktopOptionsyx1 />
-            <div className="">
+            <div className="w-full">
               <MobileCategory />
-              <TabletCategory />
+              <div className="flex pl-14 pb-14  w-full items-center justify-center">
+                <TabletCategory />
+              </div>
               <DesktopCategory />
             </div>
             <Mobilesummary />
