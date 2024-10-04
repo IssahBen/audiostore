@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useData } from "../../../Context/DataContext";
+import { NavLink, useNavigate } from "react-router-dom";
 export default function MobileCart() {
   const [numberofitems, setNumberOfItems] = useState(0);
   const [sum, setSum] = useState(0);
+  const navigate = useNavigate();
   const {
     numberOfMark1,
     setNumberOfMark1,
@@ -60,6 +62,9 @@ export default function MobileCart() {
     setNumberOfYx1(0);
     setNumberOfxx59(0);
   }
+  function Checkout() {
+    navigate("/checkout");
+  }
 
   return (
     <div className="w-full h-full flex flex-col  space-y-2 px-10 py-5">
@@ -105,7 +110,10 @@ export default function MobileCart() {
         <p className="font-medium text-ash manropebh6">Total</p>
         <p className="font-bold text-black manropebh5">$ {sum}</p>
       </div>
-      <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] ">
+      <button
+        onClick={Checkout}
+        class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] "
+      >
         CHECKOUT
       </button>
     </div>

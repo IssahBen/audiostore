@@ -1,3 +1,4 @@
+import Checkout from "./Components/Checkout/Checkout";
 import Earphones from "./Components/Earphones/earphones";
 import Headphones from "./Components/Headphones/headphones";
 import Home from "./Components/Home/Home";
@@ -28,6 +29,7 @@ function App() {
           <Route path="speakers/zx9" element={<VZX9 />} />
           <Route path="earphones" element={<Earphones />} />
           <Route path="earphones/yx1" element={<VYX1 />} />
+          <Route path="checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
     </DataProvider>
