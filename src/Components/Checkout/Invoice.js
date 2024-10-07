@@ -64,11 +64,9 @@ export default function Invoice() {
   }
 
   return (
-    <div className="w-full h-full flex flex-col  space-y-2 px-5 py-5">
+    <div className="w-full h-full flex flex-col  space-y-8 px-5 py-5">
       <div className="flex w-full justify-between">
-        <h2 className="text-black manropebh6 font-bold">
-          CART({numberofitems})
-        </h2>
+        <h2 className="text-black manropebh6 font-bold">Summary</h2>
       </div>
       {numberOfMark1 === 0 ? (
         ""
@@ -116,7 +114,13 @@ export default function Invoice() {
         <p className="font-medium text-ash manropebh6">GRAND TOTAL</p>
         <p className="font-thin text-black manropebh5">$ {grandtotal}</p>
       </div>
-      <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] ">
+      <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] smallhide largehide ">
+        PURCHASE
+      </button>
+      <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[623px] h-[48px] mediumhide largehide  ml-10">
+        PURCHASE
+      </button>
+      <button class="bg-brown hover:bg-hoverbrown text-white font-normal w-[284px] h-[48px] desktophide ml-4">
         PURCHASE
       </button>
     </div>
