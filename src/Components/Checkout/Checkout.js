@@ -1,12 +1,10 @@
 import DesktopNav from "../Home/Desktop/DesktopNav";
-import MobileCart from "../Home/Mobile/MobileCart";
 
 import MobileNav from "../Home/Mobile/MobileNav";
 
 import TabletNav from "../Home/Tablet/TabletNav";
 import { useNavigate } from "react-router-dom";
 
-import Invoice from "./Invoice";
 import MobileCheckout from "./MobileCheckout";
 import Mobilefooter from "../Home/Mobile/MobileFooter";
 import TabletCheckout from "./TabletCheckout";
@@ -17,7 +15,6 @@ import { useRef } from "react";
 import CheckedOut from "./CheckedOut";
 export default function Checkout() {
   const navigate = useNavigate();
-  const cart = useRef(null);
 
   return (
     <div className="relative w-screen h-screen overflow-y-auto flex flex-col bg-tintwhite">

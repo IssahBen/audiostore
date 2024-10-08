@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useData } from "../../Context/DataContext";
-import { NavLink, useNavigate } from "react-router-dom";
+
 export default function Invoice() {
   const [numberofitems, setNumberOfItems] = useState(0);
   const [sum, setSum] = useState(0);
   const [vat, setVat] = useState(0);
-  const navigate = useNavigate();
+
   const [grandtotal, setGrandTotal] = useState(0);
   const shipping = 50;
   const {
@@ -57,11 +57,9 @@ export default function Invoice() {
     numberOfZx7,
     numberOfZx9,
     numberOfxx59,
+    vat,
   ]);
 
-  function Checkout() {
-    navigate("/checkout");
-  }
   function Purchase() {
     let overlay = document.getElementById("overlay");
     let body = document.getElementById("body");
