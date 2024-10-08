@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useData } from "../../Context/DataContext";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function CheckedOut() {
   const [numberofitems, setNumberOfItems] = useState(0);
   const [sum, setSum] = useState(0);
