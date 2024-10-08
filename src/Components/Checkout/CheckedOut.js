@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useData } from "../../Context/DataContext";
 import { NavLink, useNavigate } from "react-router-dom";
-export default function Invoice() {
+export default function CheckedOut() {
   const [numberofitems, setNumberOfItems] = useState(0);
   const [sum, setSum] = useState(0);
   const [vat, setVat] = useState(0);
@@ -59,10 +59,7 @@ export default function Invoice() {
     numberOfxx59,
   ]);
 
-  function Checkout() {
-    navigate("/checkout");
-  }
-  function Purchase() {
+  function Home() {
     let overlay = document.getElementById("overlay");
     let body = document.getElementById("body");
     let purchase = document.getElementById("purchase");
@@ -76,82 +73,53 @@ export default function Invoice() {
       overlay.classList.add("hidden");
       body.style.position = "";
     }
+    setNumberOfMark1(0);
+    setNumberOfMark2(0);
+    setNumberOfYx1(0);
+    setNumberOfZx7(0);
+    setNumberOfZx9(0);
+    setNumberOfYx1(0);
+    setNumberOfxx59(0);
+    navigate("/");
   }
 
   return (
     <div className="w-full h-full flex flex-col  space-y-8 px-5 py-5">
       <div className="flex w-full justify-between">
-        <h2 className="text-black manropebh6 font-bold">Summary</h2>
+        <div className="flex flex-col">
+          <h2 className="text-black manropebh4 font-bold">THANK YOU</h2>
+          <h2 className="text-black manropebh4  font-bold">FOR YOUR ORDER</h2>
+          <p className="text-ash mt-5">
+            You will receive an email confirmation shortly
+          </p>
+        </div>
       </div>
-      {numberOfMark1 === 0 ? (
-        ""
-      ) : (
-        <Mark1 mark1s={numberOfMark1} setmark1={setNumberOfMark1} />
-      )}
-      {numberOfMark2 === 0 ? (
-        ""
-      ) : (
-        <Mark2 mark2s={numberOfMark2} setmark2={setNumberOfMark2} />
-      )}
-      {numberOfxx59 === 0 ? (
-        ""
-      ) : (
-        <Xx59 xx59s={numberOfxx59} setxx59={setNumberOfxx59} />
-      )}
-      {numberOfZx7 === 0 ? (
-        ""
-      ) : (
-        <Zx7 zx7s={numberOfZx7} setzx7={setNumberOfZx7} />
-      )}
-      {numberOfZx9 === 0 ? (
-        ""
-      ) : (
-        <Zx9 zx9s={numberOfZx9} setzx9={setNumberOfZx9} />
-      )}
-      {numberOfYx1 === 0 ? (
-        ""
-      ) : (
-        <Yx1 yx1s={numberOfYx1} setyx1={setNumberOfYx1} />
-      )}
-      <div className="flex justify-between">
-        <p className="font-medium text-ash manropebh6">TOTAL</p>
-        <p className="font-thin text-black manropebh5">$ {sum}</p>
-      </div>
-      <div className="flex justify-between">
-        <p className="font-medium text-ash manropebh6">SHIPPING</p>
-        <p className="font-thin text-black manropebh5">$ {shipping}</p>
-      </div>
-      <div className="flex justify-between">
-        <p className="font-medium text-ash manropebh6">TAX</p>
-        <p className="font-thin text-black manropebh5">$ {vat}</p>
-      </div>
-      <div className="flex justify-between">
-        <p className="font-medium text-ash manropebh6">GRAND TOTAL</p>
-        <p className="font-thin text-black manropebh5">$ {grandtotal}</p>
+      <div className="flex flex-col rounded-xl bg-tintwhite">
+        <div className="flex flex-col  px-2 py-2 ">
+          {numberOfMark1 === 0 ? "" : <Mark1 mark1s={numberOfMark1} />}
+          {numberOfMark2 === 0 ? "" : <Mark2 mark2s={numberOfMark2} />}
+          {numberOfxx59 === 0 ? "" : <Xx59 xx59s={numberOfxx59} />}
+          {numberOfZx7 === 0 ? "" : <Zx7 zx7s={numberOfZx7} />}
+          {numberOfZx9 === 0 ? "" : <Zx9 zx9s={numberOfZx9} />}
+          {numberOfYx1 === 0 ? "" : <Yx1 yx1s={numberOfYx1} />}
+        </div>
+
+        <div className="flex justify-between items-center px-5 py-5 rounded-b-xl bg-black">
+          <p className="font-bold text-tintwhite manropereg">GRAND TOTAL</p>
+          <p className="font-bold text-tintwhite manropereg">$ {grandtotal}</p>
+        </div>
       </div>
       <button
-        onClick={Purchase}
-        class="bg-brown hover:bg-hoverbrown text-white font-normal w-[271px] h-[48px] smallhide largehide "
+        onClick={Home}
+        class="bg-brown  tracking-widest hover:bg-hoverbrown text-white font-bold w-[271px] h-[48px]  "
       >
-        PURCHASE
-      </button>
-      <button
-        onClick={Purchase}
-        class="bg-brown hover:bg-hoverbrown text-white font-normal w-[623px] h-[48px] mediumhide largehide  ml-10"
-      >
-        PURCHASE
-      </button>
-      <button
-        onClick={Purchase}
-        class="bg-brown hover:bg-hoverbrown text-white font-normal w-[284px] h-[48px] desktophide ml-4"
-      >
-        PURCHASE
+        BACK TO HOME
       </button>
     </div>
   );
 }
 
-function Mark2({ mark2s, setmark2 }) {
+function Mark2({ mark2s }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -167,7 +135,7 @@ function Mark2({ mark2s, setmark2 }) {
     </div>
   );
 }
-function Mark1({ mark1s, setmark1 }) {
+function Mark1({ mark1s }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -183,7 +151,7 @@ function Mark1({ mark1s, setmark1 }) {
     </div>
   );
 }
-function Xx59({ xx59s, setxx59 }) {
+function Xx59({ xx59s }) {
   return (
     <div className="flex w-full justify-between items-center">
       <div className="flex space-x-2 items-center">
@@ -199,7 +167,7 @@ function Xx59({ xx59s, setxx59 }) {
     </div>
   );
 }
-function Zx7({ zx7s, setzx7 }) {
+function Zx7({ zx7s }) {
   return (
     <div className="flex w-full justify-between  items-center">
       <div className="flex space-x-2 items-center">
@@ -215,7 +183,7 @@ function Zx7({ zx7s, setzx7 }) {
     </div>
   );
 }
-function Zx9({ zx9s, setzx9 }) {
+function Zx9({ zx9s }) {
   return (
     <div className="flex w-full justify-between items-center ">
       <div className="flex space-x-2 items-center">
@@ -231,7 +199,7 @@ function Zx9({ zx9s, setzx9 }) {
     </div>
   );
 }
-function Yx1({ yx1s, setyx1 }) {
+function Yx1({ yx1s }) {
   return (
     <div className="flex w-full justify-between items-center">
       <div className="flex space-x-2 items-center">

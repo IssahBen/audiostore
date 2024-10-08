@@ -30,6 +30,7 @@ function BillingDetails() {
         <p className="text-black">Name</p>
         <input
           type="text"
+          placeholder="John Doe"
           className="w-[280px] h-[56px] border-2 rounded-lg px-10"
         />
       </div>
@@ -37,6 +38,7 @@ function BillingDetails() {
         <p className="text-black">Phone Number</p>
         <input
           type="text"
+          placeholder="+(1)431-323-3580"
           className="w-[280px] h-[56px] border-2 rounded-lg px-10"
         />
       </div>
@@ -44,6 +46,7 @@ function BillingDetails() {
         <p className="text-black">Email Address</p>
         <input
           type="text"
+          placeholder="@gmail.com"
           className="w-[280px] h-[56px] border-2 rounded-lg px-10"
         />
       </div>
@@ -95,14 +98,16 @@ function PaymentDetails() {
         <p className="text-black">Name on Card</p>
         <input
           type="text"
-          className="w-[280px] h-[56px] border-2 rounded-lg px-10"
+          placeholder="John Doe"
+          className="w-[280px] h-[56px] border-2 rounded-lg pl-2"
         />
       </div>
       <div className="flex flex-col  font-bold  space-y-2 w-full ">
         <p className="text-black">Card Number</p>
         <input
           type="text"
-          className="w-[280px] h-[56px] border-2 rounded-lg px-10"
+          placeholder="xxxx-xxxx-xxxx-xxxx"
+          className="w-[280px] h-[56px] border-2 rounded-lg pl-2"
         />
       </div>
       <div className="flex flex-col w-full">
