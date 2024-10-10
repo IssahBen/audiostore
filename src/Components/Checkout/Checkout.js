@@ -11,7 +11,7 @@ import TabletCheckout from "./TabletCheckout";
 import Tabletfooter from "../Home/Tablet/TabletFooter";
 import DesktopCheckout from "./DesktopCheckout";
 import Desktopfooter from "../Home/Desktop/DesktopFooter";
-import { useRef } from "react";
+
 import CheckedOut from "./CheckedOut";
 export default function Checkout() {
   const navigate = useNavigate();

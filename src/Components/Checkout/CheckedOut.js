@@ -57,6 +57,7 @@ export default function CheckedOut() {
     numberOfZx7,
     numberOfZx9,
     numberOfxx59,
+    vat
   ]);
 
   function Home() {
